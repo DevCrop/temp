@@ -1,113 +1,43 @@
-@use "sass:map";
-@use "sass:meta";
-@use "./functions" as func;
-@use "./primitives" as prim;
-@use "./variables" as var;
-
-@mixin mq($key-or-size, $direction: "max") {
-  $breakpoints: var.$breakpoints;
-
-  @if (meta.type-of($key-or-size) == "string") {
-    $size: map.get($breakpoints, $key-or-size);
-    @media (#{$direction}-width: #{$size}px) {
-      @content;
-    }
-  } @else if (meta.type-of($key-or-size) == "number") {
-    @media (#{$direction}-width: #{$key-or-size}px) {
-      @content;
-    }
-  } @else {
-    @error "No found breakpoint: #{$key-or-size}";
-  }
-}
-
-@mixin setupTypography($items) {
-  $fillable: "fs", "fm", "lh", "ls", "fw";
-  $breakpoints: var.$breakpoints;
-
-  @each $key, $map in $items {
-    @each $size, $value in $map {
-      .#{prim.$app-id}-#{$key}-#{$size} {
-        @if (map.has-key($value, "fs")) {
-          font-size: map.get($value, "fs");
-        }
-        @if (map.has-key($value, "fm")) {
-          font-family: map.get($value, "fm");
-        }
-        @if (map.has-key($value, "lh")) {
-          line-height: map.get($value, "lh");
-        }
-        @if (map.has-key($value, "ls")) {
-          letter-spacing: map.get($value, "ls");
-        }
-        @if (map.has-key($value, "fw")) {
-          font-weight: map.get($value, "fw");
-        }
-      }
-    }
-  }
-}
-
-@mixin generateResponsiveVars($vars) {
-  $breakpoints: var.$breakpoints;
-  $pointList: map.keys($breakpoints);
-
-  @each $key, $map in $vars {
-    $tk: func.recursive($map);
-
-    @if ($key == default) {
-      @each $name, $value in $tk {
-        --#{$name}: #{$value};
-      }
-    } @else if($key in $pointList) {
-      @include mq($key) {
-        @each $name, $value in $tk {
-          --#{$name}: #{$value};
-        }
-      }
-    }
-  }
-}
-
-@mixin generateVars($map, $prefix: null) {
-  $vars: func.recursive($map);
-
-  @each $key, $value in $vars {
-    $identifier: if($prefix == null, "--", "--#{$prefix}-");
-    #{$identifier}#{$key}: #{$value};
-  }
-}
-
-@mixin generateThemeVars($themes) {
-  @each $name, $map in $themes {
-    @if ($name != default) {
-      $vars: func.recursive($map);
-
-      html[data-theme="#{$name}"] {
-        @each $key, $value in $vars {
-          --clr-#{$key}: #{$value};
-        }
-      }
-    }
-  }
-}
-
-@mixin mq-max($key-or-size) {
-  @include mq($key-or-size, "max") {
-    @content;
-  }
-}
-
-@mixin mq-min($key-or-size) {
-  @include mq($key-or-size, "min") {
-    @content;
-  }
-}
+@use 'sass:map';
+@use 'sass:meta';
+@use './functions' as *;
+@use './media-query' as *;
 
 @mixin flex-center() {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin shadow-btn($background: var(--clr-primary-500)) {
+  a {
+    box-shadow: 1px 3px 1px var(--clr-base-white);
+    border: 2px solid var(--clr-base-white);
+    padding: 1rem fluid(12, 20);
+    color: var(--clr-base-white);
+    background: $background;
+    will-change: transform;
+    transition: 0.2s ease all;
+    &:hover {
+      transform: translateY(2px);
+      box-shadow: 1px 1px 0;
+    }
+  }
+}
+@mixin shadow-btn--b($background: var(--clr-base-white), $color: var(--clr-base-black)) {
+  a {
+    box-shadow: 1px 3px 0 var(--clr-base-black);
+    border: 2px solid var(--clr-base-black);
+    padding: 1rem fluid(12, 20);
+    color: $color;
+    background: $background;
+    will-change: transform;
+    transition: 0.2s ease all;
+    &:hover {
+      transform: translateY(2px);
+      box-shadow: 1px 1px 0 var(--clr-base-black);
+    }
+  }
 }
 
 @mixin blind() {
@@ -119,40 +49,46 @@
   overflow: hidden;
 }
 
-@mixin blur($val: 16px) {
-  backdrop-filter: blur($val);
-  -webkit-backdrop-filter: blur($val);
-}
-
-@mixin pos-center-cover() {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 @mixin pos-center() {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@mixin line-clamp($line) {
+@mixin pos-cover() {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+}
+@mixin bgi() {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@mixin line-clamp($line) {
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
   display: -webkit-box;
   -webkit-line-clamp: $line;
-  -webkit-box-orient: vertical;
-  word-break: keep-all;
-  white-space: normal;
 }
 
 @mixin img-cover() {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@mixin line-clamp($line: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
 }
 
 @mixin img-auto-cover($percent: 56.25%) {
@@ -167,31 +103,12 @@
   }
 }
 
-@mixin hasRadius($val: 24px) {
-  overflow: hidden;
-  border-radius: $val;
-}
-@mixin backdrop($opacity: 0.45) {
-  @include pos-center();
-  background: rgba(0, 0, 0, $opacity);
-}
-
-@mixin backdrop-gradient() {
-  @include pos-center();
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
-}
-
-@mixin backgroundControl($size) {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: $size;
-}
 @mixin grid-columns($default, $breakpoints...) {
   display: grid;
 
-  @if type-of($default) == "number" {
+  @if type-of($default) == 'number' {
     grid-template-columns: repeat($default, 1fr);
-  } @else if type-of($default) == "list" {
+  } @else if type-of($default) == 'list' {
     grid-template-columns: $default;
   }
 
@@ -200,11 +117,23 @@
     $columns: map-get($breakpoint, columns);
 
     @include mq($mq) {
-      @if type-of($columns) == "number" {
+      @if type-of($columns) == 'number' {
         grid-template-columns: repeat($columns, 1fr);
-      } @else if type-of($columns) == "list" {
+      } @else if type-of($columns) == 'list' {
         grid-template-columns: $columns;
       }
     }
   }
+}
+
+// ==================
+// row-gap, column-gap min,max control
+// ==================
+@mixin gap-settings($row-min, $row-max, $col-min, $col-max) {
+  row-gap: fluid($row-min, $row-max);
+  column-gap: fluid($col-min, $col-max);
+}
+@mixin backdrop($opacity: 0.45) {
+  @include pos-center();
+  background: rgba(0, 0, 0, $opacity);
 }

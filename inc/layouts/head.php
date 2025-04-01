@@ -9,19 +9,9 @@ $CUR_PAGE_INDEX		= $MENU->getCurPageIndex();
 ?>
 
 <!DOCTYPE html>
-<html lang="<?=$LOCALE?>" class="is-transition">
+<html lang="<?=$LOCALE?>">
 
 <head>
-
-    <?php
-        $theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'dark';
-    ?>
-
-    <script>
-    const currentTheme = "<?php echo $theme; ?>";
-    document.documentElement.setAttribute("data-theme", currentTheme);
-    </script>
-
 
 
 

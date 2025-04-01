@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="no-pd-md--t --flex-center">
+            <div class="no-pd-xl--t --flex-center">
                 <a href="/pages/community/qna.php" class="no-btn no-btn__fill --radius-thin">
                     목록으로
                 </a>

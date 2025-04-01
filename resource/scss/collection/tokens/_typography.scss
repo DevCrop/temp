@@ -1,0 +1,127 @@
+@use '../../abstracts' as *;
+
+$typography: (
+  display: (
+    xxl: (
+      fs: fluid(90, 188),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-10),
+    ),
+    xl: (
+      fs: fluid(80, 146),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-10),
+    ),
+    lg: (
+      fs: fluid(64, 128),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-10),
+    ),
+    md: (
+      fs: fluid(48, 96),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-10),
+    ),
+    sm: (
+      fs: fluid(48, 80),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-10),
+    ),
+    xs: (
+      fs: fluid(40, 72),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-10),
+    ),
+  ),
+  heading: (
+    xl: (
+      fs: fluid(32, 64),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-11),
+    ),
+    lg: (
+      fs: fluid(28, 48),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-12),
+    ),
+    bl: (
+      fs: fluid(26, 40),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-12),
+    ),
+    md: (
+      fs: fluid(24, 36),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-13),
+    ),
+    sm: (
+      fs: fluid(22, 28),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-13),
+    ),
+    xs: (
+      fs: fluid(18, 24),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-14),
+    ),
+  ),
+  body: (
+    xl: (
+      fs: fluid(16, 20),
+      fw: var(--font-weight-regular),
+      lh: var(--font-ratio-15),
+    ),
+    lg: (
+      fs: fluid(16, 18),
+      fw: var(--font-weight-regular),
+      lh: var(--font-ratio-16),
+    ),
+    md: (
+      fs: fluid(14, 16),
+      fw: var(--font-weight-regular),
+      lh: var(--font-ratio-16),
+    ),
+    sm: (
+      fs: fluid(12, 14),
+      fw: var(--font-weight-regular),
+      lh: var(--font-ratio-16),
+    ),
+    xs: (
+      fs: fluid(10, 12),
+      fw: var(--font-weight-regular),
+      lh: var(--font-ratio-16),
+    ),
+  ),
+  base: (
+    bnum: (
+      fs: fluid(26, 40),
+      fw: var(--font-weight-bold),
+      lh: var(--font-ratio-12),
+    ),
+    keysub: (
+      fs: fluid(18, 28),
+      fw: var(--font-weight-medium),
+      lh: var(--font-ratio-14),
+    ),
+    ssub: (
+      fs: fluid(16, 22),
+      fw: var(--font-weight-regular),
+      lh: var(--font-ratio-14),
+    ),
+    smenu: (
+      fs: fluid(14, 18),
+      fw: var(--font-weight-semiBold),
+      lh: var(--font-ratio-14),
+    ),
+    label: (
+      fs: fluid(14, 16),
+      fw: var(--font-weight-medium),
+      lh: var(--font-ratio-16),
+    ),
+    date: (
+      fs: fluid(12, 14),
+      fw: var(--font-weight-medium),
+      lh: var(--font-ratio-16),
+    ),
+  ),
+);

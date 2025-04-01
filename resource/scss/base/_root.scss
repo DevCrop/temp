@@ -1,49 +1,12 @@
-@use "sass:map";
-@use "../abstracts" as *;
-
-/* 공통 스크롤바 스타일 */
-::-webkit-scrollbar {
-  width: 8px; /* 세로 스크롤바 너비 */
-  height: 8px; /* 가로 스크롤바 높이 */
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--clr-primary-main);
-  border-radius: 6px; /* 둥글게 처리 */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--clr-secondary-main);
-}
-
-::-webkit-scrollbar-track {
-  background: #f4f4f4; /* 트랙 배경 색상 */
-  border-radius: 6px; /* 트랙 둥글게 처리 */
-  margin: 4px; /* 트랙 상하/좌우 여백 */
-}
-
-::-webkit-scrollbar-corner {
-  background: #f4f4f4; /* 모서리 색상 */
-}
-
-$root-variables: recursive($tokens);
-
-:root {
-  @include generateVars($root-variables);
-  @include generateVars(map.get($themes, $app-theme), "clr");
-  @include generateResponsiveVars($variables);
-}
-
-@include generateThemeVars($themes);
+@use 'sass:map';
+@use '../abstracts' as *;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html.lenis-stopped {
-  overflow: hidden;
-}
+
 html {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -51,86 +14,29 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   font-size: 62.5%;
-  &.is-transition {
-    transition: none !important;
-  }
-}
-
-html.is-changing .transition-main {
-  transition: opacity 250ms ease-in-out;
-}
-
-html.is-animating .transition-main {
-  opacity: 0;
-}
-
-%body {
-  font-family: var(--fm-body);
-  font-size: var(--fs-body-md);
-  line-height: 1.5;
-  font-weight: 400;
-  color: var(--clr-text-body);
-  word-break: keep-all;
 }
 
 body {
-  @extend %body;
-  background: var(--clr-background-primary);
-  transition: var(--tran-bg);
+  font-family: var(--font-family-body);
+  font-size: var(--fs-body-lg);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--clr-text-body);
+  background: var(--clr-bg-surface-25);
 }
 
 ::selection {
-  background-color: var(--clr-primary-main);
-  color: var(--clr-primary-on);
+  background-color: var(--clr-primary-500);
+  color: #fff;
 }
 
 a {
-  font-family: var(--fm-body);
   text-decoration: none;
   color: var(--clr-text-body);
-  display: block;
-}
-
-b {
-  font-weight: var(--fw-bold);
-}
-button {
-  @extend %body;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  table-layout: fixed;
 }
 
 input,
-textarea,
 select,
-form,
-fieldset,
-legend {
-  @extend %body;
-  border: none;
-  &:focus {
-    outline: none;
-  }
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  &::after {
-    content: none;
-  }
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-  vertical-align: middle;
-  object-fit: cover;
-  display: block;
+textarea {
+  color: var(--clr-text-body);
 }

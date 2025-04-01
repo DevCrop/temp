@@ -51,9 +51,9 @@
                 </div>
                 <!---search---->
                 <div class="--mobile-full">
-                    <div class="no-form-search --mobile-full">
+                    <div class="no-form-search__type_A --mobile-full">
                         <input type="text" name="search_term" id="search_term" placeholder="검색어를 입력해주세요.">
-                        <button type="submit" class="no-form-search-icon">
+                        <button type="submit" class="no-form-search__type_A-icon">
                             <i class="fa-light fa-magnifying-glass"></i>
                         </button>
                     </div>
@@ -116,9 +116,12 @@
                 </div>
 
             </div>
+
             <div class="no-pd-xl--t">
                 <nav class="no-pagination">
-
+                    <a href="#" class="no-pagination__arrow">
+                        <i class="fa-solid fa-chevrons-left"></i>
+                    </a>
                     <a href="#" class="no-pagination__arrow">
                         <i class="fa-light fa-chevron-left"></i>
                     </a>
@@ -143,6 +146,9 @@
 
                     <a href="#" class="no-pagination__arrow">
                         <i class="fa-light fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="no-pagination__arrow">
+                        <i class="fa-regular fa-chevrons-right"></i>
                     </a>
 
                 </nav>

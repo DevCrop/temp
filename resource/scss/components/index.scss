@@ -1,11 +1,5 @@
-@forward "./form";
-@forward "./prevnext";
-@forward "./local-nav";
-@forward "./local-visual";
-@forward "./modal";
-@forward "./pagination";
-@forward "./popup";
-@forward "./table";
-@forward "./button";
-@forward "./tooltip";
-@forward "./cursor";
+@use './breadcrumb';
+@use './button';
+@use './form';
+@use './table';
+@use './_pagination';

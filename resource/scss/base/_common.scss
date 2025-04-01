@@ -1,208 +1,85 @@
 @use "sass:map";
 @use "sass:math";
 @use "../abstracts" as *;
+@use "../collection/primitives/spacing" as spc;
+@use "../collection/tokens/spacing" as tk-spc;
 
-$color-styles: recursive(map.get($themes, $app-theme));
-$padding-styles: recursive($paddings);
-$gap-styles: recursive($gaps);
-$margin-styles: recursive($margins);
-
-@each $key, $val in $color-styles {
-  $attr-value: var(--clr-#{$key});
-
-  .#{$app-id}-clr-#{$key} {
-    color: $attr-value;
-  }
-  .#{$app-id}-bg-#{$key} {
-    background: $attr-value;
-  }
-}
-
-@each $key, $val in $padding-styles {
-  $id: "#{$app-id}-pd-#{$key}";
-  $attr-value: var(--pd-#{$key});
-
-  .#{$id} {
-    padding: $attr-value;
-  }
-  .#{$id}--x {
-    padding: 0 $attr-value;
-  }
-  .#{$id}--y {
-    padding: $attr-value 0;
-  }
-  .#{$id}--r {
-    padding-right: $attr-value;
-  }
-  .#{$id}-l {
-    padding-left: $attr-value;
-  }
-  .#{$id}--t {
-    padding-top: $attr-value;
-  }
-  .#{$id}--b {
-    padding-bottom: $attr-value;
-  }
-
-  @each $name, $size in $breakpoints {
-    $mq-id: "#{$app-id}-#{$name}__pd-#{$key}";
-
-    @include mq($name) {
-      .#{$mq-id} {
-        padding: $attr-value;
-      }
-      .#{$mq-id}--x {
-        padding: 0 $attr-value;
-      }
-      .#{$mq-id}--y {
-        padding: $attr-value 0;
-      }
-      .#{$mq-id}--r {
-        padding-right: $attr-value;
-      }
-      .#{$mq-id}-l {
-        padding-left: $attr-value;
-      }
-      .#{$mq-id}--t {
-        padding-top: $attr-value;
-      }
-      .#{$mq-id}--b {
-        padding-bottom: $attr-value;
-      }
-    }
-  }
-}
-
-@each $key, $val in $margin-styles {
-  $id: "#{$app-id}-mg-#{$key}";
-  $attr-value: var(--mg-#{$key});
-
-  .#{$id} {
-    padding: $attr-value;
-  }
-  .#{$id}--x {
-    padding: 0 $attr-value;
-  }
-  .#{$id}--y {
-    padding: $attr-value 0;
-  }
-  .#{$id}--r {
-    padding-right: $attr-value;
-  }
-  .#{$id}-l {
-    padding-left: $attr-value;
-  }
-  .#{$id}--t {
-    padding-top: $attr-value;
-  }
-  .#{$id}--b {
-    padding-bottom: $attr-value;
-  }
-
-  @each $name, $size in $breakpoints {
-    $mq-id: "#{$app-id}-#{$name}__mg-#{$key}";
-
-    @include mq($name) {
-      .#{$mq-id} {
-        padding: $attr-value;
-      }
-      .#{$mq-id}--x {
-        padding: 0 $attr-value;
-      }
-      .#{$mq-id}--y {
-        padding: $attr-value 0;
-      }
-      .#{$mq-id}--r {
-        padding-right: $attr-value;
-      }
-      .#{$mq-id}-l {
-        padding-left: $attr-value;
-      }
-      .#{$mq-id}--t {
-        padding-top: $attr-value;
-      }
-      .#{$mq-id}--b {
-        padding-bottom: $attr-value;
-      }
-    }
-  }
-}
-
-@each $key, $value in $breakpoints {
-  $id: "#{$app-id}-container-#{$key}";
-
-  .#{$id} {
-    max-width: #{$value}px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--app-gutter);
-    padding-right: var(--app-gutter);
-  }
-}
-
-@each $key, $val in $gap-styles {
-  $id: "#{$app-id}-gap-#{$key}";
-  $attr-value: var(--gp-#{$key});
-
-  .#{$id} {
-    gap: $attr-value;
-  }
-  .#{$id}--x {
-    gap: 0 $attr-value;
-  }
-  .#{$id}--y {
-    gap: $attr-value 0;
-  }
-}
-
-.#{$app-id}-row {
-  $gutter: calc(var(--app-gutter) / 2);
-  $gap: calc(var(--app-gutter) * 1);
+.no-row {
+  --col-gutter: calc(var(--gutter) / 2);
+  --row-gutter: var(--gutter);
 
   display: flex;
   flex-wrap: wrap;
-  margin-left: -#{$gutter};
-  margin-right: -#{$gutter};
+  margin-left: calc(var(--col-gutter) * -1);
+  margin-right: calc(var(--col-gutter) * -1);
+  margin-top: calc(var(--row-gutter) * -1);
+
+  $map: map.merge(map.get(tk-spc.$spacing, section), spc.$spacing);
+  @each $key, $value in $map {
+    &.--row-gutter-#{$key} {
+      --row-gutter: #{$value};
+    }
+    &.--col-gutter-#{$key} {
+      --col-gutter: #{$value};
+    }
+  }
+  @each $key, $value in $map {
+    @each $point, $width in breakpoint() {
+      @include mq($width) {
+        &.--row-gutter-#{$point}-#{$key} {
+          --row-gutter: #{$value};
+        }
+        &.--col-gutter-#{$point}-#{$key} {
+          --col-gutter: #{$value};
+        }
+      }
+    }
+  }
 
   @for $i from 1 through 12 {
-    $width: calc($i / 12) * 100%;
+    $col-width: calc($i / 12) * 100%;
 
-    & > .#{$app-id}-col-#{$i} {
-      width: $width;
-      padding-left: #{$gutter};
-      padding-right: #{$gutter};
+    & > .no-col-#{$i} {
+      width: $col-width;
+      padding-left: var(--col-gutter);
+      padding-right: var(--col-gutter);
+      margin-top: var(--row-gutter);
     }
+  }
+  @for $i from 1 through 12 {
+    $col-width: calc($i / 12) * 100%;
 
-    @each $key, $value in $breakpoints {
-      & > .#{$app-id}-col-#{$key}-#{$i} {
-        @include mq($key) {
-          width: $width;
-          padding-left: #{$gutter};
-          padding-right: #{$gutter};
+    @each $point, $width in breakpoint() {
+      & > .no-col-#{$point}-#{$i} {
+        @include mq($width) {
+          width: $col-width;
+          padding-left: var(--col-gutter);
+          padding-right: var(--col-gutter);
         }
       }
     }
   }
+}
 
-  &.#{$app-id}-row-gap {
-    margin-top: -#{$gap};
-    margin-bottom: -#{$gap};
+.no-direct-link {
+  color: var(--clr-primary-default);
 
-    @for $i from 1 through 12 {
-      & > .#{$app-id}-col-#{$i} {
-        padding-top: #{$gap};
-        padding-bottom: #{$gap};
-      }
-
-      @each $key, $value in $breakpoints {
-        & > .#{$app-id}-col-#{$key}-#{$i} {
-          @include mq($key) {
-            padding-top: #{$gap};
-            padding-bottom: #{$gap};
-          }
-        }
-      }
-    }
+  &:hover {
+    text-decoration: underline;
   }
+}
+.no-link {
+  &:hover {
+    color: var(--clr-primary-default);
+  }
+}
+
+.of-h {
+  overflow: hidden;
+}
+.of-v {
+  overflow: visible;
+}
+.of-s {
+  overflow: scroll;
 }

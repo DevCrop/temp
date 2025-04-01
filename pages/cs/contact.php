@@ -28,28 +28,40 @@
                         <div id="daumRoughmapContainer1735813312499"
                             class="root_daum_roughmap root_daum_roughmap_landing"></div>
                     </div>
-                    <ul>
+                    <ul class="no-pd-lg--t">
                         <li class="no-pd-lg--y no-section-content">
                             <ul>
-                                <li class="grid-col-4-8 no-gap-sm">
+                                <li class="grid-col-4-8 ai-c no-gap-lg">
                                     <h3 class="no-heading-md">지도</h3>
                                     <ul class="f ai-c no-gap-sm f-w">
                                         <li>
-                                            <a href="#" class="no-btn no-btn__outline--white">
+                                            <a href="https://kko.kakao.com/1CpMV_T2tQ" target="_blank"
+                                                class="no-btn-arrow no-btn-arrow__outline--white  ">
                                                 카카오 지도로 확인
-                                                <i class="fa-light fa-arrow-up-right"></i>
+                                                <span>
+                                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                                </span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="no-btn no-btn__outline--white">
+                                            <a href="https://naver.me/x9BNag5b" target="_blank"
+                                                class="no-btn-arrow no-btn-arrow__outline--white  ">
                                                 네이버 지도로 확인
-                                                <i class="fa-light fa-arrow-up-right"></i>
+                                                <span>
+                                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                                </span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" class="no-btn no-btn__outline--white">
-                                                구글 지도로 확인
-                                                <i class="fa-light fa-arrow-up-right"></i>
+                                            <a href="https://maps.app.goo.gl/H7Gx1ryaa78SS8kAA"
+                                                class="no-btn-arrow no-btn-arrow__outline--white  " target="_blank"> 구글
+                                                지도로 확인
+                                                <span>
+                                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                                </span>
                                             </a>
                                         </li>
                                     </ul>
@@ -58,9 +70,9 @@
                         </li>
                         <li class="no-pd-lg--y no-section-content">
                             <ul>
-                                <li class="grid-col-4-8 ai-c no-gap-sm">
-                                    <h3 class="no-heading-md">버스 이용 시</h3>
-                                    <div class="no-body-lg">
+                                <li class="grid-col-4-8 ai-c no-gap-lg">
+                                    <h3 class="no-heading-md --fw-semibold">버스 이용 시</h3>
+                                    <div class="no-body-base">
                                         <div class="--no-public-tranportation">
                                             <span class="--transporation-color --metro-line-6"></span>
                                             <p>
@@ -73,13 +85,13 @@
                         </li>
                         <li class="no-pd-lg--y no-section-content">
                             <ul>
-                                <li class="grid-col-4-8 ai-c no-gap-sm">
+                                <li class="grid-col-4-8 ai-c no-gap-lg">
                                     <h3 class="no-heading-md">지하철 이용 시</h3>
                                     <div class="">
                                         <ul class="f fd-c no-gap-lg">
                                             <li class="f fd-c no-gap-xs">
-                                                <h5 class="no-heading-sm">한강진역 하차 - 1번 출구 방면</h5>
-                                                <div class="no-body-lg">
+                                                <h5 class="no-body-md --fw-semibold">한강진역 하차 - 1번 출구 방면</h5>
+                                                <div class="no-body-base">
                                                     <div class="f fd-c no-gap-xs">
                                                         <div class="--no-public-tranportation">
                                                             <span class="--transporation-color --bus-city"></span>
@@ -91,8 +103,8 @@
                                                 </div>
                                             </li>
                                             <li class="f fd-c no-gap-xs">
-                                                <h5 class="no-heading-sm">한강진역 하차 - 2번 출구 방면</h5>
-                                                <div class="no-body-lg">
+                                                <h5 class="no-body-md --fw-semibold">한강진역 하차 - 2번 출구 방면</h5>
+                                                <div class="no-body-base">
                                                     <div class="f fd-c no-gap-xs">
                                                         <div class="--no-public-tranportation">
                                                             <span class="--transporation-color --bus-city"></span>
@@ -117,8 +129,8 @@
                                                 </div>
                                             </li>
                                             <li class="f fd-c no-gap-xs">
-                                                <h5 class="no-heading-sm">서울시 중부 기술교육원 / 블루스퀘어 하차</h5>
-                                                <div class="no-body-lg">
+                                                <h5 class="no-body-md --fw-semibold">서울시 중부 기술교육원 / 블루스퀘어 하차</h5>
+                                                <div class="no-body-base">
                                                     <div class="f fd-c no-gap-xs">
                                                         <div class="--no-public-tranportation">
                                                             <span class="--transporation-color --bus-city"></span>
@@ -141,12 +153,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </li>
+                                            <li>
                                                 <div class="--info">
-                                                    <div class="f no-gap-2xs">
-                                                        <i class="fa-regular fa-circle-exclamation"></i>
+                                                    <div class="f no-gap-xs ">
                                                         <p>
                                                             강북방면에서 남산1호터널(고가도로)를 대중 교통편으로 이용하시는 분들은
-                                                            순천향대학병원(구 단국대학교) 정류장에서 하차하셔서 한강진역 방향으로 10분정도 도보로 이용하셔야 합니다.
+                                                            순천향대학병원(구 단국대학교) 정류장에서 하차하셔서 한강진역 방향으로 10분정도 도보로 이용하셔야
+                                                            합니다.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -159,14 +173,14 @@
                         </li>
                         <li class="no-pd-lg--y no-section-content">
                             <ul>
-                                <li class="grid-col-4-8 ai-c no-gap-sm">
+                                <li class="grid-col-4-8 ai-c no-gap-lg">
                                     <h3 class="no-heading-md">자가용 이용 시</h3>
                                     <div class="">
                                         <ul class="f fd-c no-gap-lg">
                                             <li class="f fd-c no-gap-xs">
-                                                <h5 class="no-heading-sm">강남 방면에서 오시는 경우</h5>
-                                                <div class="no-body-lg">
-                                                    <div class="f f-w no-gap-2xs ai-c">
+                                                <h5 class="no-body-md --fw-semibold">강남 방면에서 오시는 경우</h5>
+                                                <div class="no-body-base">
+                                                    <div class="f f-w no-gap-xs ai-c">
                                                         <p>한남대교 진입하여 직진</p>
                                                         <i class="fa-regular fa-arrow-right-long"></i>
                                                         <p>북한남 삼거리에서 좌회전 </p>
@@ -176,9 +190,9 @@
                                                 </div>
                                             </li>
                                             <li class="f fd-c no-gap-xs">
-                                                <h5 class="no-heading-sm">장충동 방면에서 오실 경우</h5>
-                                                <div class="no-body-lg">
-                                                    <div class="f f-w no-gap-2xs ai-c">
+                                                <h5 class="no-body-md --fw-semibold">장충동 방면에서 오실 경우</h5>
+                                                <div class="no-body-base">
+                                                    <div class="f f-w no-gap-xs ai-c">
                                                         <p>한남대로 진입하여 직진</p>
                                                         <i class="fa-regular fa-arrow-right-long"></i>
                                                         <p>북한남 삼거리 지나 이태원로 진입</p>
@@ -188,9 +202,9 @@
                                                 </div>
                                             </li>
                                             <li class="f fd-c no-gap-xs">
-                                                <h5 class="no-heading-sm">이태원동 방면에서 오실 경우</h5>
-                                                <div class="no-body-lg">
-                                                    <div class="f f-w no-gap-2xs ai-c">
+                                                <h5 class="no-body-md --fw-semibold">이태원동 방면에서 오실 경우</h5>
+                                                <div class="no-body-base">
+                                                    <div class="f f-w no-gap-xs ai-c">
                                                         <p>이태원로 진입하여 북한남 삼거리 방향으로 직진</p>
                                                         <i class="fa-regular fa-arrow-right-long"></i>
                                                         <p>한강진역 2,3번 출구 사이 우측 지하주차장 입구로 진입</p>

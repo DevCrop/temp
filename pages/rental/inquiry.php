@@ -99,12 +99,13 @@
                         </div>
                     </label>
                 </div>-->
-                <div class="no-form-row">
 
+
+                <div class="no-form-row">
                     <div class="no-form-group">
-                        <span class="no-form-text --mobile-none">
+                        <p class="no-form-text no-pd-sm--b">
                             스팸방지문자
-                        </span>
+                        </p>
                         <div class="no-form-captcha">
                             <div class="no-form-captcha__box">
                                 <div class="no-form-captcha__img">
@@ -116,9 +117,9 @@
                         </div>
                     </div>
                     <div class="no-form-group">
-                        <span class="no-form-text --mobile-none">
+                        <p class="no-form-text no-pd-sm--b">
                             개인정보처리방침 동의
-                        </span>
+                        </p>
                         <div class="no-form-checkbox">
                             <label for="chk">
                                 <input type="checkbox" name="chk" id="chk">
@@ -137,11 +138,11 @@
                     </div>
                 </div>
 
-
+                <!--
                 <div class="no-form-group">
                     <div class="f jc-sb md-fd-c-rev no-gap-md">
                         <div class="f no-gap-lg md-fd-c">
-                            <span class="no-form-text --mobile-none">
+                            <span class="no-form-text ">
                                 첨부파일
                             </span>
                             <div class="--file-info">
@@ -155,7 +156,7 @@
                                 <div class="no-form-file">
                                     <i class="fa-solid fa-folder-arrow-up"></i>
                                     <div class="fake-field-file">파일업로드하기</div>
-                                    <input type="file" name="file_attach" id="file_attach" class="field-file" />
+                                    <input type="file" id="file_attach" class="field-file" multiple />
                                 </div>
                                 <div class="no-form-feedback">
                                     <i class="fa-solid fa-circle-info"></i>
@@ -164,9 +165,68 @@
                             </div>
                         </label>
                     </div>
-                    </label>
-                </div>
+                </div>-->
 
+                <div>
+                    <p class="no-form-text no-pd-sm--b">
+                        파일첨부
+                    </p>
+                    <div class="f fd-c no-gap-sm">
+                        <div class="no-form-group">
+                            <label for="file_attach_1" class="no-form-label">
+                                <div class="no-form-file no-file-control">
+                                    <!-- 파일 입력 텍스트 필드 -->
+                                    <input type="text" class="no-fake-file" id="file_attach_1_txt"
+                                        placeholder="파일을 선택해주세요." readonly disabled>
+                                    <!-- 파일 업로드 박스 -->
+                                    <div class="no-file-box">
+                                        <input type="file" id="file_attach_1" class="file_attach_1" multiple
+                                            onchange="document.getElementById('file_attach_1_txt').value = this.value">
+                                        <button type="button" class="no-btn no-btn--main">파일찾기</button>
+                                    </div>
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="no-form-group">
+                            <label for="file_attach_1" class="no-form-label">
+                                <div class="no-form-file no-file-control">
+                                    <!-- 파일 입력 텍스트 필드 -->
+                                    <input type="text" class="no-fake-file" id="file_attach_1_txt"
+                                        placeholder="파일을 선택해주세요." readonly disabled>
+                                    <!-- 파일 업로드 박스 -->
+                                    <div class="no-file-box">
+                                        <input type="file" id="file_attach_1" class="file_attach_1" multiple
+                                            onchange="document.getElementById('file_attach_1_txt').value = this.value">
+                                        <button type="button" class="no-btn no-btn--main">파일찾기</button>
+                                    </div>
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="no-form-group">
+                            <label for="file_attach_1" class="no-form-label">
+                                <div class="no-form-file no-file-control">
+                                    <!-- 파일 입력 텍스트 필드 -->
+                                    <input type="text" class="no-fake-file" id="file_attach_1_txt"
+                                        placeholder="파일을 선택해주세요." readonly disabled>
+                                    <!-- 파일 업로드 박스 -->
+                                    <div class="no-file-box">
+                                        <input type="file" id="file_attach_1" class="file_attach_1" multiple
+                                            onchange="document.getElementById('file_attach_1_txt').value = this.value">
+                                        <button type="button" class="no-btn no-btn--main">파일찾기</button>
+                                    </div>
+                                </div>
+
+                            </label>
+                        </div>
+                    </div>
+                    <!-- 파일 업로드 정보 -->
+                    <div class="no-form-feedback">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>파일당 10mb 이하 · 첨부 파일은 최대 3개까지 가능합니다.</span>
+                    </div>
+                </div>
 
 
 

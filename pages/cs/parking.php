@@ -17,35 +17,207 @@
     <section class="no-sub-parking no-pd-2xl--y">
         <div class="no-container-xl">
 
-            <div class="f ai-c no-gap-xs no-section-content">
-                <i class="fa-solid fa-circle-exclamation no-clr-primary-main no-heading-sm"></i>
-                <h2 class="no-heading-md">Notice</h2>
+            <div class="f ai-c no-gap-sm no-section-content">
+                <i class="fa-solid fa-circle-exclamation no-clr-primary-main no-heading-md"></i>
+                <h2 class="no-heading-lg">Notice</h2>
             </div>
-            <div class="no-pd-md--t no-section-content">
-                <div class="--box">
-                    <ul class="--box-list-style-disc no-gap-sm">
-                        <li>
-                            <h3 class="--fw-regular">
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                블루스퀘어 주차장은 상시 만차되며 공연장 주변의 교통이 매우 혼잡하여 주차에 많은 시간이 걸리오니 대중교통을 적극 이용해 주시기 바랍니다.
-                            </h3>
-                        </li>
-                        <li>
-                            <h3 class="--fw-regular">
-                                <i class="fa-solid fa-check" aria-hidden="true"></i>
-                                블루스퀘어 주차장 현장상황에 따라 입차가 제한될 수 있으니 인근 주차장 정보를 사전에 확인 후 방문해 주시기 바라며,
-                                주차요금은 해당 주차장의 요금기준으로 적용됩니다.
-                            </h3>
+
+            <div class="no-pd-lg--t no-section-content">
+                <div class="--box-wrap">
+                    <ul>
+                        <li class="--box">
+                            <ul class="--box-list-style-disc no-gap-sm">
+                                <li>
+                                    <h3 class="">
+                                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                        블루스퀘어 주차장은 상시 만차되며 공연장 주변의 교통이 매우 혼잡하여 주차에 많은 시간이 걸리오니 <br> 대중교통을 적극 이용해 주시기
+                                        바랍니다.
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3 class="">
+                                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                        블루스퀘어 주차장 현장상황에 따라 입차가 제한될 수 있으니 인근 주차장 정보를 사전에 확인 후 방문해 주시기 바라며, <br>
+                                        주차요금은 해당 주차장의 요금기준으로 적용됩니다.
+                                    </h3>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="no-pd-xl--t no-section-content">
-                <h3 class="no-heading-md">
+            <div class="no-pd-2xl--t">
+                <h3 class="no-heading-lg">
+                    공연 대관료
+                </h3>
+                <div class="no-pd-lg--t">
+                    <div class="--table">
+                        <table class="tg">
+                            <thead>
+                                <tr>
+                                    <th class="head">
+                                        구분
+                                    </th>
+                                    <th class="head">
+                                        요금
+                                    </th>
+                                    <th class="head">
+                                        비고
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="sub-head">
+                                        일반요금 <br>
+                                        (Visitor fee)
+                                    </th>
+                                    <th class="body">
+                                        10분당 1,000원 <br>
+                                        1,000won for 10min
+
+                                    </th>
+                                    <th class="body">
+                                        20분 이내 출차시 무료 <br>
+                                        (20분 초과시 입차시간 기준으로 부과) <br>
+                                        <b>일 최대요금 제한 없음</b>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="sub-head">
+                                        공연관객 <br>
+                                        (Audience)
+
+                                    </th>
+                                    <th class="body">
+                                        4시간 이내 5,000원 <br>
+                                        (시간초과시 일반요금 적용) <br>
+                                        5,000won for 4hours
+
+
+                                    </th>
+                                    <th class="body">
+                                        공연티켓 내 QR코드로 할인 적용 가능 <br>
+                                        (공연 종료 후 30분 내 출차 시 유인정산 가능)
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="sub-head">
+                                        입점업체 이용객 <br>
+                                        (F&B Visitor fee)
+
+
+                                    </th>
+                                    <th class="body">
+                                        10분당 1,000원 <br>
+                                        1,000won for 10min
+                                    </th>
+                                    <th class="body">
+                                        해당업체 문의
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="head" colspan="3">
+                                        24:00 ~ 07:00 출차불가
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="sub-head">
+                                        장애인, 국가유공자 <br>
+                                        (The disabled, Men of national Merit)
+
+                                    </th>
+                                    <th class="body">
+                                        일반요금의 50% 할인 <br>
+                                        50% off the visitor fees
+
+                                    </th>
+                                    <th class="body">
+                                        해당 증빙자료 제시 필요
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="no-pd-2xl--t no-section-content">
+                <h3 class="no-heading-lg">
+                    주차 사전정산
+                </h3>
+                <div class="no-pd-lg--t">
+                    <div class="--box">
+                        <ul class="--box-list-style-disc no-gap-md">
+                            <li>
+                                <h3>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    공연 관람객의 경우 공연 티켓의 QR로 공연장 내 설치된 무인정산기에서 할인 적용 가능
+                                    편의시설 이용 시 각 해당 업체에 문의해주시기 바랍니다.
+                                </h3>
+                                <div>
+                                    <p>
+                                        사전 정산은 입차 20분 이후부터 가능합니다.
+                                    </p>
+                                    <p>
+                                        티켓에 주차할인 QR코드가 없는 경우, 신한카드홀 매표소 또는 물품보관소에서 QR코드 수령하여 정산하시기 바랍니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-pd-2xl--t no-section-content">
+                <h3 class="no-heading-lg">
+                    유의사항
+                </h3>
+                <div class="no-pd-lg--t">
+                    <div class="--box">
+                        <ul class="--box-list-style-disc no-gap-md">
+                            <li>
+                                <h3>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    블루스퀘어 주차장은 상시 만차되니 대중교통을 적극 이용하시기 바랍니다.
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    주차 및 교통난으로 인해 당일 관람이 불가하거나 관람을 포기한 경우 예매 취소 및 변경이 불가합니다.
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    블루스퀘어 주차장 만차에 대비하여 인근주차장 정보를 사전에 확인 후 방문해 주시기 바라며, <br>
+                                    주차요금은 해당주차장의 요금기준으로 적용됩니다. (관람객
+                                    할인 적용 불가)
+                                </h3>
+                            </li>
+                            <li>
+                                <h3>
+                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
+                                    주차장 내 도난 및 제반사고에 관하여 일체의 책임을 지지 않습니다.
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="no-pd-2xl--t no-section-content">
+                <h3 class="no-heading-lg">
                     주차장 운영시간
                 </h3>
-                <div class="no-pd-md--t">
+                <div class="no-pd-lg--t">
                     <div class="--box">
                         <ul class="--box-list-style-disc no-gap-md">
                             <li>
@@ -59,78 +231,103 @@
                                         공연 종료 후 30분 이내 출차 부탁드립니다.
 
                                     </p>
-                                </div>
-                                <div>
                                     <p>
                                         1일 2회 공연인 경우 낮공연을 관람하신 분들은 다음 공연관람 손님을 위해 바로 출차 부탁드립니다.
 
                                     </p>
-                                </div>
-                                <div>
                                     <p>
                                         1일 2회 공연인 경우 입출차 동시 진행 시 사고 방지를 위해 낮 공연 종료 10분전 - 종료 30분 이후 까지 입차가 제한됩니다. / 공연
                                         일정에 따른 변동 있음
                                     </p>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="no-pd-xl--t no-section-content">
-                <h3 class="no-heading-md">
+            <div class="no-pd-2xl--t no-section-content">
+                <h3 class="no-heading-lg">
                     전기차 충전기 이용안내
                 </h3>
-                <div class="no-pd-md--t">
-                    <div class="--box">
-                        <ul class="f fd-c no-gap-md">
-                            <li class="grid-col-5-7">
-                                <h2 class="no-heading-sm">충전기 위치</h2>
-                                <div class="f fd-c no-gap-xs">
-                                    <h4 class="no-body-lg">
-                                        블루스퀘어 지하3층(B3) 진입로 왼쪽 구역 / 최대 4대 동시 충전 가능
-                                    </h4>
+                <div class="no-pd-lg--t">
+                    <div class="--box-wrap">
+                        <ul>
+                            <li class="--box">
+                                <div class="--box-info ">
+                                    <ul class="">
+                                        <li class="">
+                                            <div class="--box-info-title no-heading-md no-heading-md">
+                                                <h3>충전기 위치</h3>
+                                            </div>
+                                            <div class="--box-info-desc">
+                                                <ul class="f fd-c no-gap-sm">
+                                                    <li>
+                                                        <p class="no-body-md">
+                                                            블루스퀘어 지하3층(B3) 진입로 왼쪽 구역 / 최대 4대 동시 충전 가능
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <div class="--box-info-title no-heading-md ">
+                                                <h3>충전기 종류</h3>
+                                            </div>
+                                            <div class="--box-info-desc">
+                                                <ul class="f fd-c no-gap-sm">
+                                                    <li>
+                                                        <p class="no-body-md">
+                                                            완속 충전기
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <div class="--box-info-title no-heading-md">
+                                                <h3>충전기 결제</h3>
+                                            </div>
+                                            <div class="--box-info-desc">
+                                                <ul class="f fd-c no-gap-sm">
+                                                    <li>
+                                                        <p class="no-body-md">
+                                                            신용카드 / 충전기 내 별도 결제 충전 요금 외 주차 요금 별도
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                </div>
-                            </li>
-                            <li class="grid-col-5-7">
-                                <h2 class="no-heading-sm">충전기 종류</h2>
-                                <div class="f fd-c no-gap-xs">
-                                    <h4 class="no-body-lg">
-                                        완속 충전기
-                                    </h4>
-
-                                </div>
-                            </li>
-                            <li class="grid-col-5-7">
-                                <h2 class="no-heading-sm">충전기 결제</h2>
-                                <div class="f fd-c no-gap-xs">
-                                    <h4 class="no-body-lg">
-                                        신용카드 / 충전기 내 별도 결제
-                                        <span>
-                                            충전 요금 외 주차 요금 별도
-                                        </span>
-                                    </h4>
-                                </div>
-                            </li>
-                            <li class="grid-col-5-7">
-                                <h2 class="no-heading-sm">환경친화적 자동차 충전소 주차 과태료 안내</h2>
-                                <div class="f fd-c">
-                                    <h4 class="no-body-lg">
-                                        아래의 경우 20만원 이하의 과태료가 부과되오니 주의 부탁드립니다.
-                                    </h4>
-                                    <div class="no-pd-xs--t">
-                                        <ul class="--list-style-num --fw-regular">
-                                            <li>
-                                                환경친화적 자동차 이외의 차량 주차 시
-                                            </li>
-                                            <li>
-                                                환경친화적 자동차의 충전 시작 후 14시간 경과 후 지속 주차 시
-                                            </li>
-                                            <li>
-                                                충전구역 표시 훼손 및 시설 고의 훼손 시
+                                <div class="--box-notice">
+                                    <div class="--box-info">
+                                        <ul class="">
+                                            <li class="">
+                                                <div class="--box-info-title no-heading-md">
+                                                    <h3>환경친화적 자동차 충전소 주차 과태료 안내</h3>
+                                                </div>
+                                                <ul class="">
+                                                    <li>
+                                                        <p class="no-body-md">
+                                                            아래의 경우 20만원 이하의 과태료가 부과되오니 주의 부탁드립니다.
+                                                        </p>
+                                                        <div class="no-pd-sm--t">
+                                                            <ul class="--list-style-num">
+                                                                <li>
+                                                                    환경친화적 자동차 이외의 차량 주차 시
+                                                                </li>
+                                                                <li>
+                                                                    환경친화적 자동차의 충전 시작 후 14시간 경과 후 지속 주차 시
+                                                                </li>
+                                                                <li>
+                                                                    충전구역 표시 훼손 및 시설 고의 훼손 시
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </div>
@@ -140,6 +337,10 @@
                     </div>
                 </div>
             </div>
+
+
+
+
 
             <div class="no-pd-2xl--t no-section-content">
 
@@ -150,29 +351,31 @@
                             <h2 class="no-heading-lg">인근 주차장 안내</h2>
                         </div>
                         <div class="f ai-c ju-c">
-                            <a href="#" class="no-btn-arrow no-btn-arrow__fill--primary ">
+                            <a href="https://www.sisul.or.kr/open_content/parking/guidance/useable.jsp" target="_blank"
+                                class="no-btn-arrow no-btn-arrow__fill--primary ">
                                 확인하러 가기
                                 <span>
+                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
                                     <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </div>
                     </div>
                     <div class=" no-body-lg no-position-padding">
-                        <ul class="grid-col-3 no-gap-md">
+                        <ul class="grid-col-3 no-gap-lg ">
                             <li class="--card">
                                 <div class="--card-txt">
                                     <h3>영업시간</h3>
-                                    <div class="--card-info ">
+                                    <div class="--card-info">
                                         <ul>
                                             <li>
-                                                <p class="">24시간 운영</p>
+                                                <p>24시간 운영</p>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="--card-icon">
-                                    <i class="fa-solid fa-clock"></i>
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                                 </div>
                             </li>
                             <li class="--card">
@@ -181,14 +384,15 @@
                                     <div class="--card-info">
                                         <ul>
                                             <li>
-                                                <p>한강진역 공영주차장
-                                                    서울시 용산구 이태원로 272</p>
+                                                <p>
+                                                    한강진역 공영주차장 서울시 용산구 이태원로 272
+                                                </p>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="--card-icon">
-                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-timer" aria-hidden="true"></i>
                                 </div>
                             </li>
                             <li class="--card">
@@ -203,10 +407,9 @@
                                     </div>
                                 </div>
                                 <div class="--card-icon">
-                                    <i class="fa-solid fa-circle-dollar"></i>
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
                                 </div>
                             </li>
-
                         </ul>
                     </div>
                 </div>

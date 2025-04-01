@@ -1,5 +1,5 @@
 {
-  "site_name": "블루스퀘어",
+  "site_name": "나인원랩스 템플릿",
   "pages": [
     {
       "title": "What's ON",
@@ -10,16 +10,6 @@
           "title": "What's ON",
           "en-title": "What's ON",
           "filename": "gallery"
-        },
-        {
-          "title": "What's ON-양",
-          "en-title": "What's ON",
-          "filename": "gallery_y"
-        },
-        {
-          "title": "What's ON-준",
-          "en-title": "What's ON",
-          "filename": "gallery_j"
         }
       ]
     },
@@ -34,8 +24,8 @@
           "filename": "bluesquare"
         },
         {
-          "title": "문화시설",
-          "en-title": "Cultural Facility",
+          "title": "공연시설",
+          "en-title": "Theater Facility",
           "filename": "fac"
         },
         {

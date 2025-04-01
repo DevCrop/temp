@@ -1,497 +1,94 @@
 @use "../abstracts" as *;
-@use "../base/placeholder" as *;
 
-.no-filing-btn {
-  border: 2px solid var(--clr-border-radio);
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
-  //background-color: #000;
-  //background-image: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: ease all 0.3s;
-  border-radius: 5rem;
-  overflow: hidden;
-  padding: 0.6rem 1.4rem;
-  position: relative;
-  &:hover {
-    transform: scale(1.1);
-    border-color: var(--clr-border-invert);
-    .no-filing-btn-circle {
-      width: 100%;
-    }
-    span {
-      color: var(--clr-text-invert);
-    }
-  }
-  &.active {
-    border-color: var(--clr-border-invert);
-  }
-  .no-filing-btn-circle {
-    aspect-ratio: 1;
-    border-radius: 50%;
-    content: "";
-    background: var(--clr-background-invert);
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.4s ease;
-    width: 0;
-    z-index: -1;
-  }
-
-  &:-moz-focusring {
-    outline: auto;
-  }
-  svg {
-    display: block;
-    vertical-align: middle;
-  }
-  input[type="radio"] {
-    display: none;
-    &:checked ~ .no-filing-btn-circle {
-      width: 120%;
-    }
-    &:checked + span {
-      color: var(--clr-text-invert);
-    }
-  }
-  [hidden] {
-    display: none;
-  }
-  span {
-    font-size: fluid(13, 15);
-    font-weight: var(--fw-medium);
-    transition: ease all 0.6s;
-  }
-}
-
-.no-date {
-  &-box {
-    position: relative;
-  }
-  &-btn {
-    @extend %form-control;
-    span {
-      font-size: var(--fs-body-lg);
-    }
-    i {
-      font-size: var(--fs-body-xl);
-      transition: var(--tran-input);
-    }
-  }
-  &-list {
-    position: absolute;
-    top: calc(var(--input-height) + 0.5rem);
-    left: 0;
-    width: 100%;
-    background: var(--clr-surface-100);
-    border-radius: 0.8rem;
-    border: 1px solid var(--clr-surface-invert-16);
-    padding: 0.8rem 0;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
-    transform: translateY(10%);
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--tran-input);
-    z-index: 10;
-    height: 20rem;
-    overflow: auto;
-    &.visible {
-      transform: translateY(0);
-      opacity: 1;
-      visibility: visible;
-    }
-    input {
-      display: none;
-    }
-    span {
-      display: flex;
-      align-items: center;
-      padding: 0.4rem 1.6rem;
-      font-size: var(--fs-body-md);
-      height: calc(var(--input-height) * 0.75);
-      width: 100%;
-      cursor: pointer;
-    }
-  }
-}
-
-.no-search {
-  @include flex-center();
-  position: relative;
-  button {
-    @extend %form-control;
-  }
-  i {
-    @include pos-center();
-  }
-}
-//기존 타입
-.no-radio-btn {
-  @include mq(md) {
-    flex-wrap: wrap;
-  }
-  span {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.4rem 1.2rem;
-    gap: fluid(8, 10);
-    cursor: pointer;
-    transition: var(--tran-input);
-    @include hasRadius(var(--input-height));
-    overflow: inherit;
-    border: 1px solid var(--clr-surface-invert-100);
-    p {
-    }
-  }
-  input {
-    &:checked + span {
-      background: var(--clr-primary-main);
-      color: var(--clr-primary-on);
-      border: 1px solid transparent;
-      & > div {
-        transform: scale(1) translateY(-50%);
-        i {
-        }
-      }
-    }
-  }
-}
-
-// 기존 서치바 타입
-.no-form-search {
-  position: relative;
-  input {
-    box-shadow: none;
-    @extend %base-input;
-  }
-  &-container {
-    @include flex-center();
-    .no-form-group {
-      width: auto;
-      @include mq(sm) {
-        width: 100%;
-      }
-    }
-  }
-  &-icon {
-    position: absolute;
-    right: 0.8rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.no-btn {
-  @extend %btn;
-
-  &__outline {
-    border: 1px solid var(--clr-surface-invert-16);
-    color: var(--clr-text-title);
-    &--primary {
-    }
-    &--secondary {
-      border: 1px solid;
-      border-color: var(--clr-secondary-main);
-      &:hover {
-        background: var(--clr-secondary-main);
-        color: var(--clr-secondary-on);
-        border: 1px solid transparent;
-        path {
-          fill: var(--clr-secondary-on);
-        }
-      }
-    }
-    &--white {
-      border: 1px solid var(--clr-border-invert);
-      color: var(--clr-text-title);
-      &:hover {
-        background: var(--clr-surface-invert-16);
-      }
-    }
-    &--black {
-    }
-  }
-  &__fill {
-    background: var(--clr-surface-invert-8);
-    color: var(--clr-text-title);
-    &:hover {
-      background: var(--clr-surface-invert-16);
-    }
-    &.active {
-      background: var(--clr-primary-main);
-      color: var(--clr-primary-on);
-    }
-    &--primary {
-      background: var(--clr-primary-main);
-      color: var(--clr-primary-on);
-
-      &:hover {
-        background: var(--clr-primary-dark);
-      }
-    }
-    &--secondary {
-    }
-    &--white {
-    }
-    &--black {
-    }
-    &--blur {
-      background: var(--clr-surface-invert-8);
-      border: 1px solid var(--clr-surface-invert-100);
-      &:hover {
-        background: var(--clr-surface-invert-16);
-      }
-    }
-  }
-  &-arrow {
-    @extend %btn;
-    span {
-      border-radius: 5rem;
-      width: 2.4rem;
-      height: 2.4rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    &__fill {
-      &--primary {
-        background: var(--clr-primary-main);
-        color: var(--clr-primary-on);
-        &:hover {
-          background: var(--clr-primary-dark);
-        }
-        span {
-          background: var(--clr-background-white);
-          i {
-            color: var(--clr-text-black);
-          }
-        }
-      }
-    }
-  }
-  &-fixed {
-    @include mq(md) {
-      position: fixed !important;
-      bottom: 2rem !important;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: var(--z-index-button);
-    }
-  }
-}
-
-.no-work-btn {
-  @extend %btn;
-  border-radius: 0.4rem;
-  width: 18rem;
-  font-size: fluid(16, 18);
-  @include mq(md) {
-    padding: 1rem 1.4rem;
-  }
-  i {
-    font-size: fluid(20, 24);
-  }
-  &__outline {
-    &--primary {
-    }
-    &--secondary {
-    }
-    &--white {
-    }
-    &--black {
-    }
-  }
-  &__fill {
-    &--primary {
-    }
-    &--secondary {
-      background: var(--clr-secondary-main);
-      color: var(--clr-secondary-on);
-      &:hover {
-        background: var(--clr-secondary-dark);
-      }
-    }
-    &--white {
-      background: var(--clr-background-white);
-      color: var(--clr-text-black);
-      &:hover {
-        background: var(--clr-primary-main);
-        color: var(--clr-primary-on);
-      }
-    }
-    &--black {
-    }
-  }
-}
-
-.--form-radius {
-  @include hasRadius(8px);
-  width: 18rem;
-  font-size: var(--fs-body-xl);
-}
-.--radius-thin {
-  @include hasRadius(4px);
-}
-
-.no-nest-btn {
-  @extend %btn;
-}
-
-.no-nest-tab {
-  &-wrap {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    li {
-      button {
-        width: 100%;
-        border-bottom: 1px solid var(--clr-surface-invert-16);
-        border-radius: 0;
-        font-size: var(--fs-body-lg);
-        &.active {
-          border-bottom: 3px solid var(--clr-surface-invert-100);
-        }
-      }
-    }
-  }
-}
-
-.no-top-btn {
-  position: fixed;
-  z-index: 100000;
-  bottom: 2%;
-  right: 4%;
-
-  button {
-    width: 4.8rem;
-    height: 4.8rem;
-    border-radius: 3.6rem;
-    background: var(--clr-secondary-main);
-    transition: ease all 0.3s, var(--tran-button);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    opacity: 0;
-    overflow: hidden;
-
-    &.active {
-      transform: scale(1);
-      opacity: 1;
-    }
-
-    i {
-      font-size: 1.4rem;
-      color: var(--clr-primary-on);
-    }
-
-    &:hover {
-      transform: scale(1.2);
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-      .arrow {
-        i:nth-child(1) {
-          transform: translate(-50%, 50%);
-        }
-        i:nth-child(2) {
-          transform: translate(-50%, -400%);
-        }
-      }
-    }
-
-    .arrow {
-      position: relative;
-
-      i {
-        position: absolute;
-        left: 50%;
-        bottom: 50%;
-        transform: translate(-50%, 50%);
-        transition: var(--tran-button);
-
-        &:nth-child(1) {
-          transform: translate(-50%, 400%);
-        }
-      }
-    }
-  }
-}
-
-.no-download-btn {
-  background: var(--card-background);
+%btn {
   display: inline-flex;
-  width: fluid(240, 360);
   align-items: center;
-  justify-content: space-between;
-  padding: 1.8rem 3.6rem;
-  @include hasRadius(10px);
-  font-size: var(--fs-body-xl);
-  transition: var(--tran-button);
-  @include mq(md) {
-    padding: 1.2rem 2.4rem;
-  }
-  @include mq(sm) {
-    padding: 1.2rem 1.6rem;
-  }
-  &:hover {
-    background: var(--card-active-background);
+  justify-content: center;
+  gap: var(--spc-8);
+  padding: var(--spc-8) var(--spc-16);
+  border-radius: var(--spc-radius-input);
+}
+
+@mixin createButton($key) {
+  .no-btn-#{$key} {
+    @extend %btn;
+    background-color: var(--clr-#{$key}-default);
+    color: var(--clr-#{$key}-text);
+
+    &:hover {
+      background-color: var(--clr-#{$key}-hover);
+    }
+    &:active {
+      background-color: var(--clr-#{$key}-focus);
+    }
+    &:disabled {
+      background-color: var(--clr-#{$key}-disabled);
+    }
   }
 }
 
-.no-text-circle-btn {
-  position: relative;
-  width: fluid(40, 128);
-  height: fluid(40, 128);
-  transition: var(--tran-button);
-  @include hasRadius(100%);
-  &:hover {
-    box-shadow: 0 0px 24px rgba(255, 255, 255, 0.48);
-  }
-  .no-text-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-  .no-text-circle-arrow {
-    @include flex-center();
-    height: 100%;
-    font-size: fluid(16, 54);
-  }
-  a {
-  }
+.no-btn-xl {
+  padding: var(--spc-16) var(--spc-32);
 }
 
-.no-floor-btn {
-  @extend %btn;
-  width: 100%;
-  height: fluid(48, 84);
-  font-size: var(--fs-heading-lg);
-  font-weight: var(--fw-semibold);
-  @include hasRadius(6px);
-  @include mq(lg) {
-    border-bottom: none !important;
-    border-radius: 5rem !important;
-    padding: 0.6rem 2rem;
-    height: auto;
-    background: var(--clr-surface-invert-8);
-  }
-  &.active {
-    background: var(--clr-background-invert);
-    color: var(--clr-text-invert);
-    border-bottom: 3px solid var(--clr-background-invert) !important;
+.no-btn-lg {
+  padding: var(--spc-12) var(--spc-24);
+  background-color: var(--clr-primary-500);
+  border-radius: 0.8rem;
+  color: #fff;
+  font-size: fluid(14, 16);
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: all 150ms linear;
+  line-height: 1;
+
+  &:hover {
+    border: 2px solid var(--clr-primary-500);
+    color: var(--clr-primary-500);
+    background-color: #fff;
   }
 }
+.no-btn-lg-plus {
+  padding: var(--spc-14) var(--spc-24);
+  background-color: #fff;
+  border-radius: 0.8rem;
+  color: var(--clr-primary-500);
+  font-size: fluid(14, 18);
+  font-weight: 500;
+  border: 1px solid var(--clr-primary-500);
+  transition: all 150ms linear;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  i {
+    color: var(--clr-primary-500);
+    font-size: fluid(16, 20);
+    transition: all 150ms linear;
+  }
+
+  &:hover {
+    border: 1px solid var(--clr-primary-500);
+    color: #fff;
+    background-color: var(--clr-primary-500);
+
+    i {
+      color: #fff;
+      transform: rotate(90deg);
+    }
+  }
+}
+.no-btn-md {
+  padding: var(--spc-8) var(--spc-16);
+}
+.no-btn-sm {
+  padding: var(--spc-4) var(--spc-12);
+  font-size: var(--fs-body-md);
+}
+
+@include createButton("primary");
+@include createButton("secondary");
+@include createButton("white");
+@include createButton("black");
+@include createButton("gray");

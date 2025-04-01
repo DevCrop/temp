@@ -17,58 +17,65 @@
     <section class="no-sub-fac no-pd-2xl--y">
         <!---tab-->
         <div class="no-sub-tab --of-h no-section-title">
-            <div class=" no-container-xl">
+            <div class="no-container-xl">
                 <div class="no-sub-tab-slider">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide">
-                            <button type="button" class=" no-btn active no-btn__fill">
+                            <button type="button" class="no-btn active no-btn__fill" data-id="shinhan-card">
                                 신한카드홀
                             </button>
                         </li>
                         <li class="swiper-slide">
-                            <button type="button" class=" no-btn    no-btn__fill">
+                            <button type="button" class="no-btn no-btn__fill" data-id="master-card">
                                 마스터카드홀
                             </button>
                         </li>
                         <li class="swiper-slide">
-                            <button type="button" class=" no-btn no-btn__fill">
+                            <button type="button" class="no-btn no-btn__fill" data-id="nemo">
                                 NEMO
                             </button>
                         </li>
                         <li class="swiper-slide">
-                            <button type="button" class=" no-btn no-btn__fill">
+                            <button type="button" class="no-btn no-btn__fill" data-id="practice">
                                 연습실
                             </button>
                         </li>
+                        <!--
                         <li class="swiper-slide">
-                            <button type="button" class=" no-btn no-btn__fill">
+                            <button type="button" class="no-btn no-btn__fill" data-id="event">
                                 이벤트홀
                             </button>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="no-sub-fac-contents no-sub-tab-contents no-section-content">
             <ul>
                 <!----content-1--->
-                <li class="shinhan-card">
+                <li class="shinhan-card" id="shinhan-card">
                     <div class="no-container-xl">
                         <div class="cnt no-pd-xl--t">
                             <div class="no-sub-tab-contents__info no-position-padding ">
                                 <div class="no-sub-tab-contents__title">
                                     <div class="no-sub-fac-logo">
-                                        <h2 class="no-heading-lg">shinhan card hall</h2>
+                                        <div class="--toggle-images">
+                                            <img src="/resource/images/logo/blue_square_shinhan_hall_logo_white.png"
+                                                class="--light-img" alt="">
+                                            <img src="/resource/images/logo/blue_square_shinhan_hall_logo_black.png"
+                                                class="--dark-img" alt="">
+                                        </div>
                                     </div>
-                                    <a href="#" class="no-btn-arrow no-btn-arrow__fill--primary  ">
+                                    <a href="<?=$ROOT?>/pages/rental/inquiry.php"
+                                        class="no-btn-arrow no-btn-arrow__fill--primary  ">
                                         대관안내 바로가기
                                         <span>
+                                            <i class="fa-regular fa-arrow-right"></i>
                                             <i class="fa-regular fa-arrow-right"></i>
                                         </span>
                                     </a>
                                 </div>
-                                <div class="no-sub-tab-contents__desc no-body-lg">
+                                <div class="no-sub-tab-contents__desc no-body-md">
                                     <ul>
                                         <li>
                                             <p>
@@ -78,14 +85,19 @@
                                         <li>
                                             <p>
                                                 객석 1층은 무대 끝 선과 객석 맨 뒷열의 거리가 약 27m로 어느 자리에서든 가깝게 무대를 바라볼 수 있으며,
-                                                객석 2층은 1열 좌석에서 무대까지의 거리가 18.5m로 국내 최단 거리를 자랑합니다. 또한
-                                                신한카드홀 좌석은 교차 형식으로 배치되어 관객 여러분의 편안한 관람을 경험할 수 있도록 설계되어 있습니다.
+                                                객석 2층은 1열 좌석에서 무대까지의 거리가 18.5m로 국내 최단 거리를 자랑합니다.
+
+                                                또한 신한카드홀 좌석은 교차 형식으로 배치되어
+                                                관객 여러분의 편안한 관람을 경험할 수 있도록 설계되어 있습니다.
                                             </p>
                                         </li>
                                         <li>
+
+
                                             <p>
-                                                가장 편안하고 쾌적한 공연 관람이 되도록, 항상 배려하는 마음으로 서비스 연구에 매진하는
-                                                신한카드홀에서 뮤지컬의 뜨거운 열기와 무한한 감동을 가져가시기 바랍니다.
+
+                                                가장 편안하고 쾌적한 공연 관람이 되도록, 항상 배려하는 마음으로 서비스 연구에 매진하는 신한카드홀에서
+                                                뮤지컬의 뜨거운 열기와 무한한 감동을 가져가시기 바랍니다.
                                             </p>
                                         </li>
                                     </ul>
@@ -96,9 +108,9 @@
                                     <ul>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>용도</h4>
+                                                <h4 class="no-heading-md">용도</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>뮤지컬 전용 공연장</p>
@@ -108,9 +120,9 @@
                                         </li>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>좌석</h4>
+                                                <h4 class="no-heading-md">좌석</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>
@@ -141,9 +153,9 @@
                                         </li>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>부대시설</h4>
+                                                <h4 class="no-heading-md">부대시설</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>
@@ -185,45 +197,46 @@
                                                     <div class="no-sub-tab-chart-title">
                                                         <h2 class="no-heading-lg">
                                                             좌석 배치도 /
-                                                            <span class="fm-en no-heading-lg">1F</span>
+                                                            <span class="fm-en ">1F</span>
                                                         </h2>
                                                     </div>
                                                     <div class="no-sub-tab-table no-sub-tab-chart-table">
                                                         <ul>
                                                             <li>
-                                                                <div class="no-sub-tab-table__title">
+                                                                <div class="no-sub-tab-table__title no-heading-md">
                                                                     <h4>객석 1층 좌석 수</h4>
                                                                 </div>
                                                                 <div class="no-sub-tab-table__info">
                                                                     <ul>
                                                                         <li>
-                                                                            <p class="no-body-lg --fw-bold">1,066석</p>
+                                                                            <p class="no-body-md">1,066석
+                                                                            </p>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
                                                             </li>
                                                             <li>
-                                                                <div class="no-sub-tab-table__title">
+                                                                <div class="no-sub-tab-table__title no-heading-md">
                                                                     <h4>특별 좌석 안내</h4>
                                                                 </div>
                                                                 <div class="no-sub-tab-table__info">
                                                                     <ul>
                                                                         <li>
-                                                                            <p>
-                                                                                오케스트라 파트석
+                                                                            <p class="no-body-md">
+                                                                                오케스트라 피트석
                                                                                 <span
                                                                                     class="no-clr-text-orchestra">76석</span>
                                                                             </p>
                                                                         </li>
                                                                         <li>
-                                                                            <p>
+                                                                            <p class="no-body-md">
                                                                                 휠체어석
                                                                                 <span
-                                                                                    class="no-clr-text-wheelchair">16석</span>
+                                                                                    class="no-clr-text-wheelchair">18석</span>
                                                                             </p>
                                                                         </li>
                                                                         <li>
-                                                                            <p>
+                                                                            <p class="no-body-md">
                                                                                 모자동반석
                                                                                 <span
                                                                                     class="no-clr-text-family">14석</span>
@@ -235,7 +248,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="no-pd-md--t">
+                                                <div class="no-pd-lg--t">
                                                     <figure class="no-container-lg">
                                                         <div class="--toggle-images">
                                                             <img src="<?=IMG_PATH?>/sub/shinhan_card_hall_chart_1_dark.png"
@@ -251,27 +264,28 @@
                                                     <div class="no-sub-tab-chart-title">
                                                         <h2 class="no-heading-lg">
                                                             좌석 배치도 /
-                                                            <span class="fm-en no-heading-lg">2F</span>
+                                                            <span class="fm-en ">2F</span>
                                                         </h2>
                                                     </div>
                                                     <div class="no-sub-tab-table no-sub-tab-chart-table">
                                                         <ul>
                                                             <li>
-                                                                <div class="no-sub-tab-table__title">
+                                                                <div class="no-sub-tab-table__title no-heading-md">
                                                                     <h4>객석 2층 좌석 수</h4>
                                                                 </div>
                                                                 <div class="no-sub-tab-table__info">
                                                                     <ul>
                                                                         <li>
-                                                                            <p class="no-body-lg --fw-bold">430석</p>
+                                                                            <p class="no-body-md">430석</p>
                                                                         </li>
+
                                                                     </ul>
                                                                 </div>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="no-pd-md--t">
+                                                <div class="no-pd-lg--t">
                                                     <figure class="no-container-lg">
                                                         <div class="--toggle-images">
                                                             <img src="<?=IMG_PATH?>/sub/shinhan_card_hall_chart_2_dark.png"
@@ -287,16 +301,16 @@
                                                     <div class="no-sub-tab-chart-title">
                                                         <h2 class="no-heading-lg">
                                                             좌석 배치도 /
-                                                            <span class="fm-en no-heading-lg">3F</span>
+                                                            <span class="fm-en ">3F</span>
                                                         </h2>
                                                     </div>
                                                     <div class="no-sub-tab-table no-sub-tab-chart-table">
                                                         <ul>
                                                             <li>
-                                                                <div class="no-sub-tab-table__title">
+                                                                <div class="no-sub-tab-table__title no-heading-md">
                                                                     <h4>객석 1층 좌석 수</h4>
                                                                 </div>
-                                                                <div class="no-sub-tab-table__info">
+                                                                <div class="no-sub-tab-table__info no-body-md">
                                                                     <ul>
                                                                         <li>
                                                                             <p class="no-heading-sm">270석</p>
@@ -307,7 +321,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="no-pd-md--t">
+                                                <div class="no-pd-lg--t">
                                                     <figure class="no-container-lg">
                                                         <div class="--toggle-images">
                                                             <img src="<?=IMG_PATH?>/sub/shinhan_card_hall_chart_3_dark.png"
@@ -369,22 +383,29 @@
                     </div>
                 </li>
                 <!----content-2--->
-                <li class="master-card">
+                <li class="master-card" id="master-card">
                     <div class="no-container-xl">
                         <div class="cnt no-pd-xl--t">
                             <div class="no-sub-tab-contents__info no-position-padding">
                                 <div class="no-sub-tab-contents__title">
                                     <div class="no-sub-fac-logo">
-                                        <h2 class="no-heading-lg">master card hall</h2>
+                                        <div class="--toggle-images">
+                                            <img src="/resource/images/logo/blue_square_mastercard_hall_logo_white.png"
+                                                class="--light-img" alt="">
+                                            <img src="/resource/images/logo/blue_square_mastercard_hall_logo_black.png"
+                                                class="--dark-img" alt="">
+                                        </div>
                                     </div>
-                                    <a href="#" class="no-btn-arrow no-btn-arrow__fill--primary  ">
+                                    <a href="<?=$ROOT?>/pages/rental/inquiry.php"
+                                        class="no-btn-arrow no-btn-arrow__fill--primary  ">
                                         대관안내 바로가기
                                         <span>
+                                            <i class="fa-regular fa-arrow-right"></i>
                                             <i class="fa-regular fa-arrow-right"></i>
                                         </span>
                                     </a>
                                 </div>
-                                <div class="no-sub-tab-contents__desc no-body-lg">
+                                <div class="no-sub-tab-contents__desc no-body-md">
                                     <ul>
                                         <li>
                                             <p>
@@ -410,9 +431,9 @@
                                     <ul>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>용도</h4>
+                                                <h4 class="no-heading-md">용도</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>콘서트, 쇼케이스, 팬미팅, 컨퍼런스, 기업행사 등</p>
@@ -422,9 +443,9 @@
                                         </li>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>좌석</h4>
+                                                <h4 class="no-heading-md">좌석</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>
@@ -449,9 +470,9 @@
                                         </li>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>부대시설</h4>
+                                                <h4 class="no-heading-md">부대시설</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>
@@ -486,7 +507,7 @@
 
                             <div class="no-pd-2xl--t">
                                 <!---tab-1---->
-                                <div class="no-pd-lg--b">
+                                <div class="no-pd-xl--b">
                                     <ul class="no-nest-tab-wrap">
                                         <li>
                                             <button type="button" class="no-nest-btn active">그라운드형</button>
@@ -508,53 +529,30 @@
                                                                 <div class="no-sub-tab-chart-title">
                                                                     <h2 class="no-heading-lg">
                                                                         좌석 배치도 /
-                                                                        <span class="fm-en no-heading-lg">1F</span>
+                                                                        <span class="fm-en ">1F</span>
                                                                     </h2>
                                                                 </div>
                                                                 <div class="no-sub-tab-table no-sub-tab-chart-table">
                                                                     <ul>
                                                                         <li>
-                                                                            <div class="no-sub-tab-table__title">
+                                                                            <div
+                                                                                class="no-sub-tab-table__title no-heading-md">
                                                                                 <h4>객석 1층 좌석 수</h4>
                                                                             </div>
                                                                             <div class="no-sub-tab-table__info">
                                                                                 <ul>
                                                                                     <li>
-                                                                                        <p class="no-body-lg --fw-bold">
+                                                                                        <p class=" no-body-md">
                                                                                             998석
                                                                                         </p>
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
                                                                         </li>
-                                                                        <li>
-                                                                            <div class="no-sub-tab-table__title">
-                                                                                <h4>특별 좌석 안내</h4>
-                                                                            </div>
-                                                                            <div class="no-sub-tab-table__info">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <p>
-                                                                                            스폰서석
-                                                                                            <span
-                                                                                                class="no-clr-text-orchestra">20석</span>
-                                                                                        </p>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <p>
-                                                                                            극장 유보석
-                                                                                            <span
-                                                                                                class="no-clr-text-wheelchair">10석</span>
-                                                                                        </p>
-                                                                                    </li>
-
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
-                                                            <div class="no-pd-md--t">
+                                                            <div class="no-pd-lg--t">
                                                                 <figure class="no-container-lg">
                                                                     <div class="--toggle-images">
                                                                         <img src="<?=IMG_PATH?>/sub/master_chart_img_1_1_dark.png"
@@ -570,46 +568,29 @@
                                                                 <div class="no-sub-tab-chart-title">
                                                                     <h2 class="no-heading-lg">
                                                                         좌석 배치도 /
-                                                                        <span class="fm-en no-heading-lg">2F</span>
+                                                                        <span class="fm-en ">2F</span>
                                                                     </h2>
                                                                 </div>
                                                                 <div class="no-sub-tab-table no-sub-tab-chart-table">
                                                                     <ul>
                                                                         <li>
-                                                                            <div class="no-sub-tab-table__title">
+                                                                            <div
+                                                                                class="no-sub-tab-table__title no-heading-md">
                                                                                 <h4>객석 1층 좌석 수</h4>
                                                                             </div>
                                                                             <div class="no-sub-tab-table__info">
                                                                                 <ul>
                                                                                     <li>
-                                                                                        <p class="no-heading-sm">381석
+                                                                                        <p class="no-body-md">381석
                                                                                         </p>
                                                                                     </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div class="no-sub-tab-table__title">
-                                                                                <h4>특별 좌석 안내</h4>
-                                                                            </div>
-                                                                            <div class="no-sub-tab-table__info">
-                                                                                <ul>
-
-                                                                                    <li>
-                                                                                        <p>
-                                                                                            휠체어석
-                                                                                            <span
-                                                                                                class="no-clr-text-wheelchair">10석</span>
-                                                                                        </p>
-                                                                                    </li>
-
                                                                                 </ul>
                                                                             </div>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
-                                                            <div class="no-pd-md--t">
+                                                            <div class="no-pd-lg--t">
                                                                 <figure class="no-container-lg">
                                                                     <div class="--toggle-images">
                                                                         <img src="<?=IMG_PATH?>/sub/master_chart_img_1_2_dark.png"
@@ -629,7 +610,7 @@
                                                         <i class="fa-light fa-arrow-left-long"></i>
                                                     </div>
                                                 </div>
-                                                <div class="no-pd-md--t">
+                                                <div class="no-pd-lg--t">
                                                     <div
                                                         class="swiper no-sub-tab-chart-slider-thum-ground no-sub-tab-chart-slider-thum">
                                                         <ul class="swiper-wrapper">
@@ -668,44 +649,22 @@
                                                                 <div class="no-sub-tab-chart-title">
                                                                     <h2 class="no-heading-lg">
                                                                         좌석 배치도 /
-                                                                        <span class="fm-en no-heading-lg">1F</span>
+                                                                        <span class="fm-en ">1F</span>
                                                                     </h2>
                                                                 </div>
                                                                 <div class="no-sub-tab-table no-sub-tab-chart-table">
                                                                     <ul>
                                                                         <li>
-                                                                            <div class="no-sub-tab-table__title">
+                                                                            <div
+                                                                                class="no-sub-tab-table__title no-heading-md">
                                                                                 <h4>객석 1층 좌석 수</h4>
                                                                             </div>
                                                                             <div class="no-sub-tab-table__info">
                                                                                 <ul>
                                                                                     <li>
-                                                                                        <p class="no-body-lg --fw-bold">
+                                                                                        <p class="no-body-md">
                                                                                             최대
                                                                                             2,400명 수용 (2,000명 권장) </p>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div class="no-sub-tab-table__title">
-                                                                                <h4>특별 좌석 안내</h4>
-                                                                            </div>
-                                                                            <div class="no-sub-tab-table__info">
-                                                                                <ul>
-                                                                                    <li>
-                                                                                        <p>
-                                                                                            스폰서석
-                                                                                            <span
-                                                                                                class="no-clr-text-orchestra">20석</span>
-                                                                                        </p>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <p>
-                                                                                            공연장 유보석
-                                                                                            <span
-                                                                                                class="no-clr-text-wheelchair">10석</span>
-                                                                                        </p>
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
@@ -713,7 +672,7 @@
                                                                     </ul>
                                                                 </div>
                                                             </div>
-                                                            <div class="no-pd-md--t">
+                                                            <div class="no-pd-lg--t">
                                                                 <figure class="no-container-lg">
                                                                     <div class="--toggle-images">
                                                                         <img src="<?=IMG_PATH?>/sub/master_chart_img_2_1_dark.png"
@@ -729,46 +688,30 @@
                                                                 <div class="no-sub-tab-chart-title">
                                                                     <h2 class="no-heading-lg">
                                                                         좌석 배치도 /
-                                                                        <span class="fm-en no-heading-lg">2F</span>
+                                                                        <span class="fm-en ">2F</span>
                                                                     </h2>
                                                                 </div>
                                                                 <div class="no-sub-tab-table no-sub-tab-chart-table">
                                                                     <ul>
                                                                         <li>
-                                                                            <div class="no-sub-tab-table__title">
+                                                                            <div
+                                                                                class="no-sub-tab-table__title no-heading-md">
                                                                                 <h4>객석 1층 좌석 수</h4>
                                                                             </div>
                                                                             <div class="no-sub-tab-table__info">
                                                                                 <ul>
                                                                                     <li>
-                                                                                        <p class="no-heading-sm">381석
+                                                                                        <p class="no-body-md">381석
                                                                                             (휠체어 10석 포함)</p>
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
                                                                         </li>
-                                                                        <li>
-                                                                            <div class="no-sub-tab-table__title">
-                                                                                <h4>특별 좌석 안내</h4>
-                                                                            </div>
-                                                                            <div class="no-sub-tab-table__info">
-                                                                                <ul>
 
-                                                                                    <li>
-                                                                                        <p>
-                                                                                            휠체어석
-                                                                                            <span
-                                                                                                class="no-clr-text-wheelchair">10석</span>
-                                                                                        </p>
-                                                                                    </li>
-
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
-                                                            <div class="no-pd-md--t">
+                                                            <div class="no-pd-lg--t">
                                                                 <figure class="no-container-lg">
                                                                     <div class="--toggle-images">
                                                                         <img src="<?=IMG_PATH?>/sub/master_chart_img_2_2_dark.png"
@@ -788,7 +731,7 @@
                                                         <i class="fa-light fa-arrow-left-long"></i>
                                                     </div>
                                                 </div>
-                                                <div class="no-pd-md--t">
+                                                <div class="no-pd-lg--t">
                                                     <div
                                                         class="swiper no-sub-tab-chart-slider-thum-stand no-sub-tab-chart-slider-thum">
                                                         <ul class="swiper-wrapper">
@@ -824,22 +767,24 @@
                     </div>
                 </li>
                 <!----content-3--->
-                <li class="nemo">
+                <li class="nemo" id="nemo">
                     <div class="no-container-xl">
                         <div class="cnt no-pd-xl--t">
                             <div class="no-sub-tab-contents__info no-position-padding">
                                 <div class="no-sub-tab-contents__title">
                                     <div class="no-sub-fac-logo">
-                                        <h2 class="no-heading-lg">NEMO Hall</h2>
+                                        <h2 class="no-heading-lg">복합문화공간 NEMO</h2>
                                     </div>
-                                    <a href="#" class="no-btn-arrow no-btn-arrow__fill--primary  ">
+                                    <a href="<?=$ROOT?>/pages/rental/inquiry.php"
+                                        class="no-btn-arrow no-btn-arrow__fill--primary  ">
                                         대관안내 바로가기
                                         <span>
+                                            <i class="fa-regular fa-arrow-right"></i>
                                             <i class="fa-regular fa-arrow-right"></i>
                                         </span>
                                     </a>
                                 </div>
-                                <div class="no-sub-tab-contents__desc no-body-lg">
+                                <div class="no-sub-tab-contents__desc no-body-md">
                                     <ul>
                                         <li>
                                             <p>
@@ -866,9 +811,9 @@
                                     <ul>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>용도</h4>
+                                                <h4 class="no-heading-md">용도</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>팝업, 전시, 아트페어, 강의, 세미나 등</p>
@@ -878,9 +823,9 @@
                                         </li>
                                         <li>
                                             <div class="no-sub-tab-table__title">
-                                                <h4>부대시설</h4>
+                                                <h4 class="no-heading-md">부대시설</h4>
                                             </div>
-                                            <div class="no-sub-tab-table__info">
+                                            <div class="no-sub-tab-table__info no-body-md">
                                                 <ul>
                                                     <li>
                                                         <p>
@@ -916,7 +861,7 @@
                     </div>
                 </li>
                 <!----content-4--->
-                <li class="practice">
+                <li class="practice" id="practice">
                     <div class="no-container-xl">
                         <div class="cnt no-pd-xl--t">
                             <div class="no-sub-tab-contents__info no-position-padding">
@@ -924,14 +869,16 @@
                                     <div class="no-sub-fac-logo">
                                         <h2 class="no-heading-lg">연습실</h2>
                                     </div>
-                                    <a href="#" class="no-btn-arrow no-btn-arrow__fill--primary  ">
+                                    <a href="<?=$ROOT?>/pages/rental/inquiry.php"
+                                        class="no-btn-arrow no-btn-arrow__fill--primary  ">
                                         대관안내 바로가기
                                         <span>
+                                            <i class="fa-regular fa-arrow-right"></i>
                                             <i class="fa-regular fa-arrow-right"></i>
                                         </span>
                                     </a>
                                 </div>
-                                <div class="no-sub-tab-contents__desc no-body-lg">
+                                <div class="no-sub-tab-contents__desc no-body-md">
                                     <ul>
                                         <li>
                                             <p>
@@ -957,26 +904,28 @@
                                 <div class="no-sub-tab-table">
                                     <ul>
                                         <li>
-                                            <div class="no-sub-tab-table__title">
-                                                <h4>신한카드홀 3F 연습실</h4>
+                                            <div class="no-sub-tab-table__title no-heading-md">
+                                                <h4>B1F 연습실</h4>
                                             </div>
                                             <div class="no-sub-tab-table__info">
                                                 <ul>
                                                     <li>
-                                                        <p>팝업, 전시, 아트페어, 강의, 세미나 등</p>
+                                                        <p class="no-body-md">
+                                                            공연예술작품 연습, 리허설, 각종 오디션 등
+                                                        </p>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </li>
+
                                         <li>
-                                            <div class="no-sub-tab-table__title">
-                                                <h4>신한카드홀 B1F 연습실</h4>
+                                            <div class="no-sub-tab-table__title no-heading-md">
+                                                <h4>3F 연습실</h4>
                                             </div>
                                             <div class="no-sub-tab-table__info">
                                                 <ul>
                                                     <li>
-                                                        <p>
-                                                            실내 BGM용 음향장비, LED 전광판, 전시용 레일 조명 등
+                                                        <p class="no-body-md">연극, 뮤지컬, K-POP 등 각종 연습 및 오디션 등
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -985,31 +934,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="no-pd-2xl--t">
-                                <h4 class="no-heading-md">3F 연습실</h4>
-                                <div class="no-pd-md--t">
-                                    <div class="swiper no-sub-tab-contents-slider-1 no-sub-tab-contents-slider">
-                                        <ul class="swiper-wrapper">
-                                            <?php for ($i = 1; $i < 5 ; $i++) :?>
-                                            <li class="swiper-slide">
-                                                <figure>
-                                                    <img src="<?=IMG_PATH?>/sub/practice_3f_img_<?=$i?>.jpg" alt="">
-                                                </figure>
-                                            </li>
-                                            <?php endfor; ?>
-                                        </ul>
-                                        <div class="swiper-button-next swiper-button">
-                                            <i class="fa-light fa-arrow-right-long"></i>
-                                        </div>
-                                        <div class="swiper-button-prev swiper-button">
-                                            <i class="fa-light fa-arrow-left-long"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="no-pd-2xl--t">
-                                <h4 class="no-heading-md">B1F 연습실</h4>
-                                <div class="no-pd-md--t">
+                            <div class="no-pd-xl--t">
+                                <h4 class="no-heading-lg">B1F 연습실</h4>
+                                <div class="no-pd-lg--t">
                                     <div class="swiper no-sub-tab-contents-slider-2 no-sub-tab-contents-slider">
                                         <ul class="swiper-wrapper">
                                             <?php for ($i = 1; $i < 4 ; $i++) :?>
@@ -1029,6 +956,29 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="no-pd-2xl--t">
+                                <h4 class="no-heading-lg">3F 연습실</h4>
+                                <div class="no-pd-lg--t">
+                                    <div class="swiper no-sub-tab-contents-slider-1 no-sub-tab-contents-slider">
+                                        <ul class="swiper-wrapper">
+                                            <?php for ($i = 1; $i < 5 ; $i++) :?>
+                                            <li class="swiper-slide">
+                                                <figure>
+                                                    <img src="<?=IMG_PATH?>/sub/practice_3f_img_<?=$i?>.jpg" alt="">
+                                                </figure>
+                                            </li>
+                                            <?php endfor; ?>
+                                        </ul>
+                                        <div class="swiper-button-next swiper-button">
+                                            <i class="fa-light fa-arrow-right-long"></i>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button">
+                                            <i class="fa-light fa-arrow-left-long"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </li>

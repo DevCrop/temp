@@ -6,7 +6,7 @@
   "scripts": {
     "sass-comp": "sass --watch --style compressed resource/scss/style.scss resource/css/style.css",
     "sass": "sass --watch resource/scss/style.scss resource/css/style.css",
-    "dev": "php -S localhost:8088"
+    "dev": "php -S localhost:8080"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,6 @@
     "@prettier/plugin-php": "^0.21.0"
   },
   "devDependencies": {
-    "sass": "^1.77.8"
+    "sass": "^1.83.1"
   }
 }

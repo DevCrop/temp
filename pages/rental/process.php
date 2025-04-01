@@ -18,7 +18,7 @@
         <div class="no-container-xl">
             <div class="">
                 <h2 class="no-heading-lg no-section-title">대관 Process</h2>
-                <div class="cnt no-pd-md--t --process no-section-content">
+                <div class="cnt no-pd-lg--t --process no-section-content">
                     <ul class="grid-col-5 ">
                         <li class="active">
                             <span>대관공고</span>
@@ -155,110 +155,92 @@
             </div>
             <div class="no-pd-2xl--t no-section-content">
                 <h2 class="no-heading-lg">대관 정보</h2>
-                <div class="cnt no-pd-md--t">
+                <div class="cnt no-pd-lg--t">
                     <div class="--box-wrap">
                         <ul>
                             <li class="--box">
                                 <div class="--box-info ">
                                     <ul class="">
                                         <li class="">
-                                            <div class="--box-info-title">
-                                                <h3>대관공고</h3>
+                                            <div class="--box-info-title no-heading-md">
+                                                <h3>대관 공고</h3>
                                             </div>
                                             <div class="--box-info-desc">
-                                                <ul class="">
+                                                <ul class="f fd-c no-gap-xs">
                                                     <li>
                                                         <ul class="">
                                                             <li>
-                                                                <span>
+                                                                <span class="no-body-md">
                                                                     신한카드홀
                                                                 </span>
                                                             </li>
 
                                                             <li>
-                                                                <p>
+                                                                <p class="no-body-base">
                                                                     홈페이지 정기 대관 공고를 통한 접수
                                                                 </p>
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li>
-                                                        <ul class="">
-                                                            <li>
-                                                                <span>
-                                                                    마스터카드홀
-                                                                </span>
-                                                            </li>
-
-                                                            <li>
-                                                                <p>
-                                                                    신한카드홀을 제외한 기타 공간은 별도의 공고 없이 수시 대관 접수
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
                                                 </ul>
+                                                <p class="no-body-md">
+                                                    신한카드홀을 제외한 기타 공간은 별도의 공고 없이 수시 대관 접수
+                                                </p>
                                             </div>
                                         </li>
                                         <li class="">
-                                            <div class="--box-info-title">
-                                                <h3>운영시간</h3>
+                                            <div class="--box-info-title no-heading-md">
+                                                <h3>신청방법</h3>
                                             </div>
                                             <div class="--box-info-desc">
-                                                <ul class="">
+                                                <ul class="f fd-c no-gap-xs">
                                                     <li>
                                                         <ul class="">
                                                             <li>
-                                                                <span>
+                                                                <span class="no-body-md">
                                                                     신한카드홀
                                                                 </span>
                                                             </li>
 
                                                             <li>
-                                                                <p>
+                                                                <p class="no-body-base">
                                                                     공고 기간 中 홈페이지 대관안내 - 대관신청 페이지를 통해 신청
                                                                 </p>
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li>
-                                                        <ul class="">
-                                                            <li>
-                                                                <span>
-                                                                    마스터카드홀
-                                                                </span>
-                                                            </li>
-
-                                                            <li>
-                                                                <p>
-                                                                    각 홀별 담당자 개별 문의 후, 대관신청서 E-mail 접수 / 대관신청서 양식
-                                                                    대관안내 - 대관신청 페이지 참고
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-
                                                 </ul>
-                                            </div>
-                                        </li>
-                                        <li class="">
-                                            <div class="--box-info-title">
-                                                <h3>대관심의 및 통보</h3>
-                                            </div>
-                                            <div class="--box-info-desc">
-                                                <ul class="">
-                                                    <li>
-                                                        <span>
-                                                            심의 결과 승인 여부 및 제출 필요 서류 개별 통보 (메일, 문자 또는 유선 통보)
-                                                        </span>
-                                                    </li>
-                                                </ul>
+                                                <p class="no-body-md">
+                                                    각 홀별 담당자 개별 문의 후, 대관신청서 E-mail 접수 / 대관신청서 양식 대관안내 -
+                                                    대관신청 페이지 참고
+                                                </p>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
 
-
+                                <div class="no-pd-lg--t">
+                                    <div class="--box-notice">
+                                        <div class="--box-info">
+                                            <ul class="">
+                                                <li class="">
+                                                    <div class="--box-info-title no-heading-md">
+                                                        <h3>대관심의 및 통보</h3>
+                                                    </div>
+                                                    <div class="--box-info-desc --box-notice-desc">
+                                                        <ul class="">
+                                                            <li>
+                                                                <p class="no-body-md">
+                                                                    심의 결과 승인 여부 및 제출 필요 서류 개별 통보 (메일, 문자 또는 유선 통보)
+                                                                </p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -266,19 +248,34 @@
             </div>
 
             <div class="no-pd-2xl--t no-section-content">
-                <div class="grid-col-4-8">
+                <div class="grid-col-4-8 no-gap-lg">
                     <h2 class="no-heading-lg">대관 문의</h2>
                     <div class="cnt">
-                        <ul class="grid-col-2 no-gap-md">
+                        <ul class="grid-col-2 no-gap-lg">
                             <li class="--card">
-                                <h4 class="no-heading-sm">신한카드홀</h4>
-                                <div class="no-pd-sm--t no-body-lg">
-                                    <ul>
-                                        <li class="f ai-c no-gap-2xs">
+                                <h4 class="no-heading-md">신한카드홀</h4>
+                                <div class="no-pd-sm--t no-body-md">
+                                    <ul class="f fd-c  no-gap-xs">
+                                        <li class="f ai-c no-gap-sm">
+                                            <i class="fa-solid fa-phone"></i>
+                                            <span>02 - 6399 - 7552</span>
+                                        </li>
+                                        <li class="f ai-c no-gap-sm">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <span>sujinkim@interparktriple.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="--card">
+                                <h4 class="no-heading-md">마스터카드홀</h4>
+                                <div class="no-pd-sm--t no-body-md">
+                                    <ul class="f fd-c  no-gap-xs">
+                                        <li class="f ai-c no-gap-sm">
                                             <i class="fa-solid fa-phone"></i>
                                             <span>02 - 6399 - 7515</span>
                                         </li>
-                                        <li class="f ai-c no-gap-2xs">
+                                        <li class="f ai-c no-gap-sm">
                                             <i class="fa-solid fa-envelope"></i>
                                             <span>baekws@interparktriple.com</span>
                                         </li>
@@ -286,29 +283,14 @@
                                 </div>
                             </li>
                             <li class="--card">
-                                <h4 class="no-heading-sm">마스터카드홀</h4>
-                                <div class="no-pd-sm--t no-body-lg">
-                                    <ul>
-                                        <li class="f ai-c no-gap-2xs">
-                                            <i class="fa-solid fa-phone"></i>
-                                            <span>02 - 6399 - 7515</span>
-                                        </li>
-                                        <li class="f ai-c no-gap-2xs">
-                                            <i class="fa-solid fa-envelope"></i>
-                                            <span>baekws@interparktriple.com</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="--card">
-                                <h4 class="no-heading-sm">NEMO</h4>
-                                <div class="no-pd-sm--t no-body-lg">
-                                    <ul>
-                                        <li class="f ai-c no-gap-2xs">
+                                <h4 class="no-heading-md">NEMO</h4>
+                                <div class="no-pd-sm--t no-body-md">
+                                    <ul class="f fd-c  no-gap-xs">
+                                        <li class="f ai-c no-gap-sm">
                                             <i class="fa-solid fa-phone"></i>
                                             <span>02 - 6399 - 7481</span>
                                         </li>
-                                        <li class="f ai-c no-gap-2xs">
+                                        <li class="f ai-c no-gap-sm">
                                             <i class="fa-solid fa-envelope"></i>
                                             <span>dere.lee@interparktriple.com</span>
                                         </li>
@@ -316,14 +298,14 @@
                                 </div>
                             </li>
                             <li class="--card">
-                                <h4 class="no-heading-sm">연습실</h4>
-                                <div class="no-pd-sm--t no-body-lg">
-                                    <ul>
-                                        <li class="f ai-c no-gap-2xs">
+                                <h4 class="no-heading-md">연습실</h4>
+                                <div class="no-pd-sm--t no-body-md">
+                                    <ul class="f fd-c  no-gap-xs">
+                                        <li class="f ai-c no-gap-sm">
                                             <i class="fa-solid fa-phone"></i>
                                             <span>02 - 6399 -7552</span>
                                         </li>
-                                        <li class="f ai-c no-gap-2xs">
+                                        <li class="f ai-c no-gap-sm">
                                             <i class="fa-solid fa-envelope"></i>
                                             <span>sujinkim@interparktriple.com</span>
                                         </li>

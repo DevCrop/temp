@@ -46,7 +46,7 @@
         </div>
         <div class="no-container-xl">
 
-            <div class="no-pd-lg--t ">
+            <div class="no-pd-xl--t ">
                 <div class=" no-sub-tab-contents">
                     <ul>
                         <!----content-1--->
@@ -81,20 +81,20 @@
                                 </table>
 
                             </div>
-                            <div class="no-pd-xs--t">
+                            <div class="no-pd-sm--t">
                                 <div class="--table-info">
                                     <i class="fa-solid fa-circle-exclamation"></i>
                                     VAT 별도
                                 </div>
                             </div>
 
-                            <div class="no-pd-xl--t">
-                                <h3 class="no-heading-md">
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
                                     공연대관 안내사항
                                 </h3>
                                 <div class="no-pd-md--t">
                                     <div class="--box">
-                                        <ul class="--box-list-style-disc no-gap-md">
+                                        <ul class="--box-list-style-disc ">
                                             <li>
                                                 <h3>
                                                     <i class="fa-solid fa-check"></i>
@@ -160,13 +160,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="no-pd-xl--t">
-                                <h3 class="no-heading-md">
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
                                     준비대관 안내사항
                                 </h3>
                                 <div class="no-pd-md--t">
                                     <div class="--box">
-                                        <ul class="--box-list-style-disc no-gap-md">
+                                        <ul class="--box-list-style-disc ">
                                             <li>
                                                 <h3>
                                                     <i class="fa-solid fa-check"></i>
@@ -232,91 +232,92 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
+                                    주의사항
+                                </h3>
+                                <div class="no-pd-md--t">
+                                    <div class="--box">
+                                        <ul class="--box-list-style-disc ">
+                                            <li>
+                                                <h3> <i class="fa-solid fa-check"></i>
+                                                    위 금액의 공연대관료 및 준비대관료에는 장비대여료, 부대시설사용료는 포함되어 있지 않음
+                                                </h3>
+                                                <div>
+                                                    <p> 장비대여료 및 부대시설사용료는 블루스퀘어 <a href="#" class="dib">대관규약</a>에 의거 대관계약
+                                                        시 추가산정</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </li>
                         <!----content 2----->
                         <li class="">
-                            <div class="--table">
-                                <table class="tg">
-                                    <thead>
-                                        <tr>
-                                            <th rowspan="2" class="head">
-                                                구분
-                                            </th>
-                                            <th colspan="2" class="head">
-                                                공연대관
-                                            </th>
-                                            <th colspan="3" class="head">
-                                                공연대관
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="sub-head">
-                                                공연기간
-                                            </th>
-                                            <th class="sub-head">
-                                                대관료 / 회당
-                                            </th>
-                                            <th class="sub-head">
-                                                준비기간
-                                            </th>
-                                            <th class="sub-head">
-                                                기본구간 대관료 / 09 - 22시
-                                            </th>
-                                            <th class="sub-head">
-                                                철야구간 대관료 / 시간당
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td rowspan="2" class="body">
-                                                <p>
-                                                    콘서트
-                                                </p>
-                                            </td>
-                                            <td class="body">
-                                                주중
-                                            </td>
-                                            <td class="body"> 6,500,000원</td>
-                                            <td class="body">주중</td>
-                                            <td class="body">7,500,000원</td>
-                                            <td class="body">1,000,000원</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="body">
-                                                주말
-                                            </td>
-                                            <td class="body"> 7,700,000원</td>
-                                            <td class="body">주말</td>
-                                            <td class="body">8,800,000원</td>
-                                            <td class="body">1,000,000원</td>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="2" class="body">
-                                                <p>
-                                                    방송 / 행사
-                                                </p>
-                                            </td>
-                                            <td class="body">
-                                                주중
-                                            </td>
-                                            <td class="body"> 7,400,000원</td>
-                                            <td class="body">주중</td>
-                                            <td class="body">7,700,000원</td>
-                                            <td class="body">1,000,000원</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="body">
-                                                주말
-                                            </td>
-                                            <td class="body"> 8,900,000원</td>
-                                            <td class="body">주말</td>
-                                            <td class="body">9,200,000원</td>
-                                            <td class="body">1,000,000원</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <h3 class="no-heading-lg">
+                                공연 대관료
+                            </h3>
+                            <div class="no-pd-md--t">
+                                <div class="--table">
+                                    <table class="tg">
+                                        <thead>
+                                            <tr>
+                                                <th class="head">
+                                                    구분
+                                                </th>
+                                                <th class="head">
+                                                    공연기간
+                                                </th>
+                                                <th class="head">
+                                                    회당 대관료 <br>
+                                                    (VAT 별도)
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="body" rowspan="2">
+                                                    <p>
+                                                        콘서트
+                                                    </p>
+                                                </td>
+                                                <td class="body">
+                                                    주중
+                                                </td>
+                                                <td class="body"> 6,500,000원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="body">
+                                                    주말
+                                                </td>
+                                                <td class="body"> 7,700,000원</td>
+                                            </tr>
 
+                                            <tr>
+                                                <td class="body" rowspan="2">
+                                                    <p>
+                                                        방송 / 행사
+                                                    </p>
+                                                </td>
+                                                <td class="body">
+                                                    주중
+                                                </td>
+                                                <td class="body"> 7,400,000원</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td class="body">
+                                                    주말
+                                                </td>
+                                                <td class="body"> 8,900,000원</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <div class="no-pd-sm--t">
                                 <div class="--table-info">
@@ -324,13 +325,100 @@
                                     VAT 별도
                                 </div>
                             </div>
-                            <div class="no-pd-xl--t">
-                                <h3 class="no-heading-md">
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
+                                    준비 대관료
+                                </h3>
+                                <div class="no-pd-md--t">
+                                    <div class="--table">
+                                        <table class="tg">
+                                            <thead>
+                                                <tr>
+                                                    <th class="head">
+                                                        구분
+                                                    </th>
+                                                    <th class="head">
+                                                        공연기간
+                                                    </th>
+                                                    <th class="head">
+                                                        기본 구간<br>
+                                                        (09 : 00 ~ 22 : 00)
+                                                    </th>
+                                                    <th class="head">
+                                                        철야 구간<br>
+                                                        (시간 당 / VAT 별도)
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="body" rowspan="2">
+                                                        <p>
+                                                            콘서트
+                                                        </p>
+                                                    </td>
+                                                    <td class="body">
+                                                        주중
+                                                    </td>
+                                                    <td class="body"> 7,500,000원</td>
+                                                    <td class="body">
+                                                        1,000,000원
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="body">
+                                                        주말
+                                                    </td>
+                                                    <td class="body"> 8,900,000원</td>
+                                                    <td class="body">
+                                                        1,000,000원
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="body" rowspan="2">
+                                                        <p>
+                                                            방송 / 행사
+                                                        </p>
+                                                    </td>
+                                                    <td class="body">
+                                                        주중
+                                                    </td>
+                                                    <td class="body"> 7,700,000원</td>
+                                                    <td class="body">
+                                                        1,000,000원
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="body">
+                                                        주말
+                                                    </td>
+                                                    <td class="body"> 9,200,000원</td>
+                                                    <td class="body">
+                                                        1,000,000원
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="no-pd-sm--t">
+                                    <div class="--table-info">
+                                        <i class="fa-solid fa-circle-exclamation"></i>
+                                        VAT 별도
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
                                     공연대관 안내사항
                                 </h3>
                                 <div class="no-pd-md--t">
                                     <div class="--box">
-                                        <ul class="--box-list-style-disc no-gap-md ">
+                                        <ul class="--box-list-style-disc  ">
                                             <li>
                                                 <h3>
                                                     <i class="fa-solid fa-check"></i>
@@ -396,6 +484,29 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
+                                    주의사항
+                                </h3>
+                                <div class="no-pd-md--t">
+                                    <div class="--box">
+                                        <ul class="--box-list-style-disc ">
+                                            <li>
+                                                <h3> <i class="fa-solid fa-check"></i>
+                                                    위 금액의 공연대관료 및 준비대관료에는 장비대여료, 부대시설사용료는 포함되어 있지 않음
+                                                </h3>
+                                                <div>
+                                                    <p> 장비대여료 및 부대시설사용료는 블루스퀘어 <a href="#" class="dib">대관규약</a>에 의거 대관계약
+                                                        시 추가산정</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </li>
                         <!----content 3----->
                         <li>
@@ -518,21 +629,13 @@
                                     VAT 별도
                                 </div>
                             </div>
-                            <div class="no-pd-xl--t">
-                                <h3 class="no-heading-md">
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
                                     대관 안내사항
                                 </h3>
                                 <div class="no-pd-md--t">
                                     <div class="--box">
-                                        <ul class="--box-list-style-disc no-gap-md">
-                                            <li>
-                                                <h3>
-                                                    <i class="fa-solid fa-check"></i>
-                                                    1개월 이상 장기대관 별도 협의
-
-                                                </h3>
-
-                                            </li>
+                                        <ul class="--box-list-style-disc ">
                                             <li>
                                                 <h3>
                                                     <i class="fa-solid fa-check"></i>
@@ -565,9 +668,31 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
+                                    주의사항
+                                </h3>
+                                <div class="no-pd-md--t">
+                                    <div class="--box">
+                                        <ul class="--box-list-style-disc ">
+                                            <li>
+                                                <h3> <i class="fa-solid fa-check"></i>
+                                                    위 금액의 공연대관료 및 준비대관료에는 장비대여료, 부대시설사용료는 포함되어 있지 않음
+                                                </h3>
+                                                <div>
+                                                    <p> 장비대여료 및 부대시설사용료는 블루스퀘어 <a href="#" class="dib">대관규약</a>에 의거 대관계약
+                                                        시 추가산정</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                         </li>
                         <li>
-                            <h3 class="no-heading-md">
+                            <h3 class="no-heading-lg">
                                 연습실 - B1F
                             </h3>
                             <div class="no-pd-md--t">
@@ -595,7 +720,7 @@
                                                     1회
                                                 </th>
                                                 <th class="body" rowspan="3">
-                                                    200,000원
+                                                    400,000원
                                                 </th>
                                                 <th class="body" rowspan="3">
                                                     3 시간 기준<br>
@@ -625,7 +750,7 @@
                                                     1일
                                                 </th>
                                                 <th class="body">
-                                                    400,000원
+                                                    450,000원
                                                 </th>
                                                 <th class="body">
                                                     오전, 오후, 야간
@@ -646,8 +771,8 @@
                                     VAT 별도
                                 </div>
                             </div>
-                            <div class="no-pd-xl--t">
-                                <h3 class="no-heading-md">
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
                                     연습실 - 3F
                                 </h3>
                                 <div class="no-pd-md--t">
@@ -659,7 +784,8 @@
                                                         구분
                                                     </th>
                                                     <th colspan="3" class="head">
-                                                        사용기준
+                                                        대관료 <br>
+                                                        (VAT 별도)
                                                     </th>
                                                     <th rowspan="2" class="head">
                                                         비고
@@ -673,14 +799,15 @@
                                                         종일
                                                     </th>
                                                     <th class="sub-head">
-                                                        추가시간 당
+                                                        추가시간당
                                                     </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td class="head" rowspan="2">
-                                                        메인 댄스홀
+                                                        메인 <br>
+                                                        댄스홀
                                                     </td>
 
                                                     <td class="sub-head">
@@ -689,11 +816,11 @@
                                                     <td class="body"> 50,000원</td>
                                                     <td class="body">200,000원</td>
                                                     <td class="body">20,000원</td>
-                                                    <td class="body" rowspan="5">10 : 00 - 22 : 00</td>
+                                                    <td class="body has-border-left" rowspan="5">10 : 00 - 22 : 00</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="sub-head">
-                                                        스튜디오 1 - 3
+                                                        레드
                                                     </td>
                                                     <td class="body"> 40,000원</td>
                                                     <td class="body">150,000원</td>
@@ -701,7 +828,8 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="head" rowspan="2">
-                                                        그룹 연습실
+                                                        그룹 <br>
+                                                        연습실
                                                     </td>
 
                                                     <td class="sub-head">
@@ -713,9 +841,17 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="sub-head">
-                                                        보컬룸 1 - 9
+                                                        스튜디오 1 -3
                                                     </td>
                                                     <td class="body"> 10,000원</td>
+                                                    <td class="body">45,000원</td>
+                                                    <td class="body">4,000원</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="head" colspan="2">
+                                                        보컬룸
+                                                    </td>
+                                                    <td class="body"> 50,000원</td>
                                                     <td class="body">45,000원</td>
                                                     <td class="body">4,000원</td>
                                                 </tr>
@@ -731,6 +867,29 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="no-pd-2xl--t">
+                                <h3 class="no-heading-lg">
+                                    주의사항
+                                </h3>
+                                <div class="no-pd-md--t">
+                                    <div class="--box">
+                                        <ul class="--box-list-style-disc ">
+                                            <li>
+                                                <h3> <i class="fa-solid fa-check"></i>
+                                                    위 금액의 공연대관료 및 준비대관료에는 장비대여료, 부대시설사용료는 포함되어 있지 않음
+                                                </h3>
+                                                <div>
+                                                    <p> 장비대여료 및 부대시설사용료는 블루스퀘어 <a href="#" class="dib">대관규약</a>에 의거 대관계약
+                                                        시 추가산정</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </li>
                     </ul>
                 </div>
