@@ -67,8 +67,7 @@ $DIR_LIST   = array(
 $MENU_PATH = $MENU_DIR."/menu.{$HTML_LANG}.json";
 
 
-// 공통 경로 설정
-define('IMG_PATH', "$ROOT/resource/images");
+
 
 if(!file_exists($MENU_PATH) && $HTML_LANG === $DEFAULT_LANG){
   $MENU_PATH   = $MENU_DIR."/menu.json";

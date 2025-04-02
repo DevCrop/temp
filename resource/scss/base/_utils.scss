@@ -13,30 +13,25 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
+  font-synthesis: none;
+  font-size: 62.5%;
 }
-
 body {
-  background: var(--clr-ui-white);
-  color: var(--clr-ui-text);
-  color-scheme: var(--clr-schema);
-  line-height: 1.61;
-  // @each $key, $value in $font-default {
-  //   #{$key}: #{$value};
-  // }
+  font-family: var(--font-family-body);
+  font-size: var(--fs-body-lg);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--clr-text-body);
 }
-
 ul,
 ol {
   list-style: none;
 }
 
 img {
-  width: 100%;
   vertical-align: middle;
   object-fit: cover;
 }
@@ -45,6 +40,10 @@ a {
   color: var(--clr-ui-black);
   text-decoration: none;
   display: block;
+}
+::selection {
+  background-color: var(--clr-primary-500);
+  color: #fff;
 }
 
 em,
@@ -56,9 +55,8 @@ button {
   background: none;
   border: none;
   font-size: fluid(14, 16);
-  font-family: var(--family-en-body);
+  font-family: var(--family-body);
   cursor: pointer;
-  line-height: var(--lh-base);
 }
 
 label {
@@ -76,15 +74,7 @@ option {
   border: none;
   outline: none;
   font-size: fluid(14, 16);
-}
-
-input,
-textarea,
-select,
-option {
-  border: none;
-  outline: none;
-  font-size: fluid(14, 16);
+  color: var(--clr-text-body);
 }
 
 .--tac {

@@ -1,0 +1,137 @@
+@use "../../abstracts" as *;
+
+.no-code {
+  &-block {
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: fluid(8, 16);
+    overflow: hidden;
+    margin: fluid(20, 48) 0;
+  }
+  &-header {
+    background: var(--clr-bg-week);
+    padding: 1rem 2.4rem;
+    > ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &-info {
+    color: var(--clr-text-desc);
+    margin-top: fluid(10, 16);
+  }
+  &-buttons {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: fluid(4, 8);
+    }
+    button {
+      width: fluid(32, 64);
+      height: fluid(32, 64);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid var(--clr-border-week);
+      border-radius: fluid(4, 8);
+      overflow: hidden;
+      transition: var(--tran-15);
+
+      &.active {
+        background: var(--clr-bg-middle);
+      }
+      &:hover {
+        background: var(--clr-bg-middle);
+      }
+    }
+  }
+  &-copy {
+    button {
+      width: fluid(32, 64);
+      height: fluid(32, 64);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border: 1px solid var(--clr-border-week);
+      border-radius: fluid(4, 8);
+      overflow: hidden;
+      transition: var(--tran-15);
+      font-size: fluid(16, 18);
+      position: relative;
+
+      &.clicked {
+        i {
+          &:first-child {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0);
+          }
+          &:last-child {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: var(--tran-15);
+        transform: translate(-50%, -50%) scale(1); // 기본 상태에서 첫 번째는 보이고
+
+        &:first-child {
+          opacity: 1;
+        }
+
+        &:last-child {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0); // 숨겨진 상태
+        }
+      }
+    }
+    &-toast {
+      position: fixed;
+      bottom: -5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--clr-bg-strong);
+      color: var(--clr-text-title-invert);
+      border-radius: fluid(8, 10);
+      overflow: hidden;
+      font-size: var(--fs-body-xl);
+      padding: 1rem 2.4rem;
+      transition: var(--tran-15);
+      display: flex;
+      align-items: center;
+      gap: fluid(6, 8);
+      &.copied {
+        bottom: fluid(16, 24);
+      }
+    }
+  }
+
+  &-body {
+    height: fluid(240, 480);
+    overflow: auto;
+    &-item {
+      padding: 2.4rem 3.6rem;
+      display: none;
+    }
+  }
+}
+
+.no-iframe {
+  &-block {
+    height: fluid(400, 480);
+    border: 1px solid #eee;
+    width: 100%;
+    background: #f9f9f9;
+    * {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,6 +1,4 @@
-@use "./breadcrumb";
-@use "./button";
-@use "./form";
-@use "./table";
-@use "./_pagination";
-@use "./code-block";
+@use "./code-block/code-block";
+@use "./header/full-header";
+@use "./header/single-heaedr";
+@use "./footer/normal-footer";

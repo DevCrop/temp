@@ -8,21 +8,19 @@ $theme-light: (
     desc: var(--clr-gray-500),
     strong: var(--clr-base-black),
     title-invert: var(--clr-base-white),
-    body-invert: var(--clr-white-07dp),
+    body-invert: var(--clr-gray-200),
   ),
   border: (
     default: var(--clr-gray-300),
-    strong: var(--clr-gray-900),
-    week: var(--clr-white-02dp),
+    strong: var(--clr-gray-800),
+    week: var(--clr-gray-100),
   ),
   bg: (
     default: var(--clr-base-white),
-    surface: var(--clr-gray-50),
-    surface-25: var(--clr-base-blur),
+    strong: var(--clr-gray-900),
+    week: var(--clr-gray-50),
+    middle: var(--clr-gray-200),
     card: var(--clr-gray-200),
-  ),
-  sementic: (
-    red: var(--clr-base-red),
   ),
   primary: (
     default: var(--clr-primary-500),

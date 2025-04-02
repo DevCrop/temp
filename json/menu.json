@@ -2,96 +2,36 @@
   "site_name": "나인원랩스 템플릿",
   "pages": [
     {
-      "title": "What's ON",
-      "en-title": "What's ON",
-      "dirname": "board",
+      "title": "회사 소개",
+      "dirname": "about",
       "pages": [
-        {
-          "title": "What's ON",
-          "en-title": "What's ON",
-          "filename": "gallery"
-        }
+        { "title": "연혁", "filename": "history" },
+        { "title": "오시는 길", "filename": "contact" },
+        { "title": "인사말", "filename": "greeting" }
       ]
     },
     {
-      "title": "공연장 소개",
-      "en-title": "Venue Introduction",
-      "dirname": "intro",
+      "title": "비즈니스",
+      "dirname": "business",
       "pages": [
-        {
-          "title": "블루스퀘어",
-          "en-title": "Blue Square",
-          "filename": "bluesquare"
-        },
-        {
-          "title": "공연시설",
-          "en-title": "Theater Facility",
-          "filename": "fac"
-        },
-        {
-          "title": "편의시설 ",
-          "en-title": "Convenience Facility",
-          "filename": "service"
-        },
-        {
-          "title": "층별안내",
-          "en-title": "Floor Guide",
-          "filename": "floor"
-        }
+        { "title": "상품 소개", "filename": "product" },
+        { "title": "상품 특징", "filename": "feature" }
       ]
     },
     {
-      "title": "대관 안내",
-      "en-title": "Rental Information",
-      "dirname": "rental",
+      "title": "고객 문의",
+      "dirname": "support",
       "pages": [
-        {
-          "title": "대관절차",
-          "en-title": "Rental Process",
-          "filename": "process"
-        },
-        {
-          "title": "대관료",
-          "en-title": "Rental Fees",
-          "filename": "fee"
-        },
-        {
-          "title": "대관자료",
-          "en-title": "Rental Documents",
-          "filename": "docx"
-        },
-        {
-          "title": "대관신청",
-          "en-title": "Rental Inquiry",
-          "filename": "inquiry"
-        }
+        { "title": "게시판", "filename": "board" },
+        { "title": "FAQ", "filename": "faq" }
       ]
     },
     {
-      "title": "고객센터",
-      "en-title": "Customer Center",
-      "dirname": "cs",
+      "title": "문의하기",
+      "dirname": "inquiry",
       "pages": [
-        {
-          "title": "공지사항",
-          "en-title": "Notice",
-          "filename": "list"
-        },
-        {
-          "title": "FAQ",
-          "en-title": "FAQ",
-          "filename": "faq"
-        },
-        {
-          "title": "오시는 길",
-          "en-title": "Contact Us",
-          "filename": "contact"
-        },
-        {
-          "title": "주차안내",
-          "en-title": "Parking Information",
-          "filename": "parking"
-        }
+        { "title": "고객문의", "filename": "customer" },
+        { "title": "제품문의", "filename": "product" }
       ]
     }
   ]

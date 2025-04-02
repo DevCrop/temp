@@ -1,7 +1,7 @@
-@use 'sass:map';
-@use 'sass:meta';
-@use './functions' as *;
-@use './media-query' as *;
+@use "sass:map";
+@use "sass:meta";
+@use "./functions" as *;
+@use "./media-query" as *;
 
 @mixin flex-center() {
   display: flex;
@@ -24,7 +24,10 @@
     }
   }
 }
-@mixin shadow-btn--b($background: var(--clr-base-white), $color: var(--clr-base-black)) {
+@mixin shadow-btn--b(
+  $background: var(--clr-base-white),
+  $color: var(--clr-base-black)
+) {
   a {
     box-shadow: 1px 3px 0 var(--clr-base-black);
     border: 2px solid var(--clr-base-black);
@@ -106,9 +109,9 @@
 @mixin grid-columns($default, $breakpoints...) {
   display: grid;
 
-  @if type-of($default) == 'number' {
+  @if type-of($default) == "number" {
     grid-template-columns: repeat($default, 1fr);
-  } @else if type-of($default) == 'list' {
+  } @else if type-of($default) == "list" {
     grid-template-columns: $default;
   }
 
@@ -117,9 +120,9 @@
     $columns: map-get($breakpoint, columns);
 
     @include mq($mq) {
-      @if type-of($columns) == 'number' {
+      @if type-of($columns) == "number" {
         grid-template-columns: repeat($columns, 1fr);
-      } @else if type-of($columns) == 'list' {
+      } @else if type-of($columns) == "list" {
         grid-template-columns: $columns;
       }
     }

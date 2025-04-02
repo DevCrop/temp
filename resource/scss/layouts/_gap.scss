@@ -1,0 +1,99 @@
+@use "../abstracts" as *;
+
+.gap-120 {
+  gap: fluid(60, 120);
+}
+
+.gap-110 {
+  gap: fluid(56, 110);
+}
+
+.gap-100 {
+  gap: fluid(50, 100);
+}
+
+.gap-90 {
+  gap: fluid(46, 90);
+}
+
+.gap-80 {
+  gap: fluid(40, 80);
+}
+
+.gap-70 {
+  gap: fluid(36, 70);
+}
+
+.gap-60 {
+  gap: fluid(30, 60);
+}
+
+.gap-50 {
+  gap: fluid(26, 50);
+}
+
+.gap-40 {
+  gap: fluid(20, 40);
+}
+
+.gap-30 {
+  gap: fluid(16, 30);
+}
+
+.gap-20 {
+  gap: fluid(10, 20);
+}
+
+.gap-10 {
+  gap: fluid(6, 10);
+}
+
+.gap-08 {
+  gap: fluid(4, 8);
+}
+
+.gap-06 {
+  gap: fluid(3, 6);
+}
+.gap-0 {
+  gap: 0;
+}
+
+.xl-gap-0 {
+  @include mq(xl) {
+    gap: 0;
+  }
+}
+
+.lg-gap-0 {
+  @include mq(lg) {
+    gap: 0;
+  }
+}
+
+.md-gap-0 {
+  @include mq(md) {
+    gap: 0;
+  }
+}
+
+.sm-gap-0 {
+  @include mq(sm) {
+    gap: 0;
+  }
+}
+
+// row-gap 및 column-gap 설정 클래스
+.gap-60-30 {
+  @include gap-settings(30, 60, 16, 30);
+}
+.gap-60-20 {
+  @include gap-settings(30, 60, 10, 20);
+}
+.gap-30-60 {
+  @include gap-settings(16, 30, 30, 60);
+}
+// row-gap 및 column-gap 설정 클래스
+.gap-40-20 {
+  @include gap-settings(20, 40, 10, 20);
+}

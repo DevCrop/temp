@@ -30,5 +30,7 @@
   }
   &-contents {
     width: 100%;
+    max-width: calc(1920px + var(--gutter));
+    margin: 0 auto;
   }
 }

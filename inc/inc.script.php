@@ -10,4 +10,5 @@
 <script src="<?=$ROOT?>/resource/vendor/popper/popper.js"></script>
 <script src="<?=$ROOT?>/resource/vendor/aos/aos.js"></script>
 <script src="<?=$ROOT?>/resource/vendor/mouseFollower/mouseFollower.js"></script>
+<script src="<?=$ROOT?>/resource/vendor/prettify/prettify.js"></script>
 <script src="<?=$ROOT?>/resource/js/app.js" type="module" defer></script>
