@@ -13,9 +13,6 @@
         new Component('components/buttons/filling-button', 'Filling Button'),
     ];
 ?>
-<!-----INTRO---->
-
-
 <div class="no-temp-container">
 
     <!-- ASIDE -->

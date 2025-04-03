@@ -2,10 +2,9 @@ const componentBlocks = document.querySelectorAll(".no-temp-block");
 
 componentBlocks.forEach((block) => {
   const url = block.dataset.url;
-
   const iframe = block.querySelector("iframe");
 
-  iframe.addEventListener("load", () => {
+  iframe.addEventListener("load", async () => {
     const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
 
     // CSS 넣기
@@ -14,10 +13,17 @@ componentBlocks.forEach((block) => {
     link.href = "/resource/css/style.css";
     iframeDoc.head.appendChild(link);
 
-    // JS 넣기
-    const script = iframeDoc.createElement("script");
-    script.src = `${url}/index.js`;
-    iframeDoc.body.appendChild(script);
+    // JS 파일 존재 확인 후 추가 (에러 로그 제거)
+    try {
+      const response = await fetch(`/${url}/index.js`, { method: "HEAD" });
+      if (response.ok) {
+        const script = iframeDoc.createElement("script");
+        script.src = `/${url}/index.js`;
+        iframeDoc.body.appendChild(script);
+      }
+    } catch (err) {
+      throw new Error(err);
+    }
   });
 });
 
