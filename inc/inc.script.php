@@ -1,4 +1,4 @@
-<script src="<?=$ROOT?>/resource/vendor/fontAwesome/fontAwesome.min.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/c9685952f0.js" crossorigin="anonymous"></script>
 <script src="<?=$ROOT?>/resource/vendor/jquery/jquery.min.js"></script>
 <script src="<?=$ROOT?>/resource/vendor/lenis/lenis.js"></script>
 <script src="<?=$ROOT?>/resource/vendor/swiper/swiper.js"></script>

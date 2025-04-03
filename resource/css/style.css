@@ -15660,7 +15660,7 @@
   --clr-white-focus: var(--clr-gray-100);
   --clr-white-disabled: var(--clr-gray-400);
   --clr-white-text: var(--clr-gray-900);
-  --clr-white-border: var(--clr-gray-900);
+  --clr-white-border: var(--clr-base-white);
   --clr-gray-default: var(--clr-gray-600);
   --clr-gray-hover: var(--clr-gray-700);
   --clr-gray-focus: var(--clr-gray-700);
@@ -15719,7 +15719,7 @@ html[data-theme=light] {
   --clr-white-focus: var(--clr-gray-100);
   --clr-white-disabled: var(--clr-gray-400);
   --clr-white-text: var(--clr-gray-900);
-  --clr-white-border: var(--clr-gray-900);
+  --clr-white-border: var(--clr-base-white);
   --clr-gray-default: var(--clr-gray-600);
   --clr-gray-hover: var(--clr-gray-700);
   --clr-gray-focus: var(--clr-gray-700);
@@ -24763,6 +24763,139 @@ option {
 }
 #normal-footer .no-footer-social li a img {
   width: 50%;
+}
+
+.no-btn-sm, .no-btn-md, .no-btn-base, .no-btn-lg, .no-btn-xl, .no-btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spc-8);
+  border-radius: var(--spc-radius-input);
+  transition: all 150ms linear;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+}
+
+.no-btn-arrow {
+  position: relative;
+  width: clamp(4rem, 13.1147540984vw - 1.1803278689rem, 24rem);
+  height: clamp(4.8rem, 2.0983606557vw + 3.971147541rem, 8rem);
+  overflow: hidden;
+}
+.no-btn-arrow a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.no-btn-arrow a:hover .circle {
+  opacity: 1;
+  width: 100%;
+}
+.no-btn-arrow a .txt {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.2rem, 0.131147541vw + 0.1481967213rem, 0.4rem);
+  z-index: 1;
+  transition: var(--tran-45);
+}
+.no-btn-arrow a .circle {
+  width: clamp(4.8rem, 0.7868852459vw + 4.4891803279rem, 6rem);
+  height: clamp(4.8rem, 0.7868852459vw + 4.4891803279rem, 6rem);
+  border-radius: 8rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: var(--tran-45);
+  opacity: 0.4;
+}
+
+.no-btn-arrow__white a .txt {
+  color: var(--clr-white-default);
+}
+.no-btn-arrow__white a .circle {
+  background: var(--clr-white-default);
+}
+.no-btn-arrow__white a:hover .txt {
+  color: var(--clr-white-text);
+}
+.no-btn-arrow__black a .txt {
+  color: var(--clr-black-default);
+}
+.no-btn-arrow__black a .circle {
+  background: var(--clr-black-default);
+}
+.no-btn-arrow__black a:hover .txt {
+  color: var(--clr-black-text);
+}
+.no-btn-arrow__primary a .txt {
+  color: var(--clr-primary-default);
+}
+.no-btn-arrow__primary a .circle {
+  background: var(--clr-primary-default);
+}
+.no-btn-arrow__primary a:hover .txt {
+  color: var(--clr-primary-text);
+}
+.no-btn-arrow__gray a .txt {
+  color: var(--clr-gray-default);
+}
+.no-btn-arrow__gray a .circle {
+  background: var(--clr-gray-default);
+}
+.no-btn-arrow__gray a:hover .txt {
+  color: var(--clr-gray-text);
+}
+
+.no-btn-xl {
+  padding: var(--spc-10) var(--spc-32);
+}
+.no-btn-lg {
+  padding: var(--spc-12) var(--spc-24);
+}
+.no-btn-base {
+  padding: var(--spc-10) var(--spc-18);
+}
+.no-btn-md {
+  padding: var(--spc-8) var(--spc-16);
+}
+.no-btn-sm {
+  padding: var(--spc-4) var(--spc-12);
+}
+
+.no-btn-outline__white {
+  border: 1px solid var(--clr-white-border);
+  color: var(--clr-white-default);
+}
+.no-btn-outline__primary {
+  border: 1px solid var(--clr-primary-border);
+  color: var(--clr-primary-default);
+}
+.no-btn-outline__black {
+  border: 1px solid var(--clr-black-border);
+  color: var(--clr-black-default);
+}
+.no-btn-outline__gray {
+  border: 1px solid var(--clr-gray-border);
+  color: var(--clr-gray-default);
+}
+.no-btn-fill__white {
+  background-color: var(--clr-white-default);
+  color: var(--clr-white-text);
+}
+.no-btn-fill__primary {
+  background-color: var(--clr-primary-default);
+  color: var(--clr-primary-text);
+}
+.no-btn-fill__black {
+  background-color: var(--clr-black-default);
+  color: var(--clr-black-text);
+}
+.no-btn-fill__gray {
+  background-color: var(--clr-gray-default);
+  color: var(--clr-gray-text);
 }
 
 .no-footer {

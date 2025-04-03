@@ -17,9 +17,9 @@
                                 <i class="fa-regular fa-plus"></i>
                             </a>
                             <ul class="no-header-lnb">
-                                <li><a href="/about/history.php">연혁</a></li>
-                                <li><a href="/about/contact.php">오시는 길</a></li>
-                                <li><a href="/about/greeting.php">인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">인사말</a></li>
                             </ul>
                         </li>
 
@@ -30,8 +30,8 @@
                                 <i class="fa-regular fa-plus"></i>
                             </a>
                             <ul class="no-header-lnb">
-                                <li><a href="/business/product.php">상품 소개</a></li>
-                                <li><a href="/business/feature.php">상품 특징</a></li>
+                                <li><a href="#">상품 소개</a></li>
+                                <li><a href="#">상품 특징</a></li>
                             </ul>
                         </li>
 
@@ -42,8 +42,8 @@
                                 <i class="fa-regular fa-plus"></i>
                             </a>
                             <ul class="no-header-lnb">
-                                <li><a href="/support/board.php">게시판</a></li>
-                                <li><a href="/support/faq.php">FAQ</a></li>
+                                <li><a href="#">게시판</a></li>
+                                <li><a href="#">FAQ</a></li>
                             </ul>
                         </li>
 
@@ -54,14 +54,14 @@
                                 <i class="fa-regular fa-plus"></i>
                             </a>
                             <ul class="no-header-lnb">
-                                <li><a href="/inquiry/customer.php">고객문의</a></li>
-                                <li><a href="/inquiry/product.php">제품문의</a></li>
+                                <li><a href="#">고객문의</a></li>
+                                <li><a href="#">제품문의</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
 
-                <a href="/pages/cs/inquiry.php" class="link-primary">
+                <a href="#" class="link-primary">
                     <div class="overlay-white"></div>
                     견적문의
                 </a>

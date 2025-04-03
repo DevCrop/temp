@@ -21,6 +21,16 @@ componentBlocks.forEach((block) => {
   });
 });
 
+document.querySelectorAll(".no-temp-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const name = button.dataset.name;
+    const target = document.querySelector(
+      `.no-temp-block[data-name="${name}"]`
+    );
+    if (target) target.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 class TabManager {
   constructor(container) {
     this.container = container;
